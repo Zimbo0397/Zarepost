@@ -1,0 +1,1074 @@
+@import _mixins
+
+.chromeperfectpixel-initial-block iframe,
+#chromeperfectpixel-supported-by
+	display: none !important
+#__bs_notify__
+	display: none !important
+	opacity: 0 !important
+
+body
+	font: $font-stack
+	// &::-webkit-scrollbar
+	// 	height: 0
+	// 	width: 0
+	background: #e9ebf1
+
+.button1
+	display: inline-block
+	background: #f2385a
+	border-radius: 13px
+	padding: 3px 19px
+	font-size: 1.2em
+	text-transform: uppercase
+	color: #fff
+	position: relative
+	top: -1px
+
+//----------------------------------
+// TOP-line
+//----------------------------------
+
+.top-line
+	padding-top: 11px
+	background: url(../img/icons/top-line.png) 50% 0% no-repeat
+	background-size: cover
+	height: 53px
+	text-transform: uppercase
+	.brand-holder
+		width: 327px
+		position: relative
+		top: -3px
+		left: 14px
+		height: 31px
+	.navigation
+		padding-left: 83px
+		position: relative
+		top: 2px
+		li
+			a
+				font-size: 1.2em
+				margin-right: 11px
+				text-transform: uppercase
+				color: #fff
+				line-height: 1.8em
+	.add-event
+		padding-left: 64px
+		margin-top: 3px
+		a
+	.login
+		padding-left: 11px
+		margin-top: 3px
+		.button1
+			font-size: 1.12em
+			padding: 4px 20px
+		i
+			padding-left: 1px
+			margin-right: 9px
+			font-size: 1em
+		span
+			color: #fff
+			margin-left: 11px
+			font-size: 1em
+		ul
+			display: inline-block
+			vertical-align: middle
+			position: relative
+			padding-left: 6px
+			position: relative
+			top: -3px
+			a
+				padding: 2px
+				border-radius: 0
+				height: 30px
+				width: 30px
+				line-height: 1.5em
+				font-size: 0.9em
+				text-align: center
+				border-radius: 3px
+				display: inline-block
+				background: #f2385a
+				color: #fff
+				margin-left: 2px
+				.fa-facebook
+					font-size: 1.9em
+					position: relative
+					top: 5px
+					right: -5px
+				.fa-vk
+					position: relative
+					top: 0px
+					left: -1px
+					font-size: 1.7em
+	.bookmarks
+		a
+			font-size: 1.2em
+			color: #fff
+			padding-left: 29px
+			position: relative
+			top: 7px
+			right: -33px
+			i
+				margin-right: 6px
+				font-size: 1.1em
+
+
+
+.mid-line
+	background: url('../img/icons/р2.png')
+	color: #fff
+	border-top: 1px solid #7d9dd9
+	.mid-content
+		padding-left: 75px
+		padding-top: 48px
+		max-width: 607px
+		h1
+			font-size: 3.8em
+			text-transform: uppercase
+			font-weight: 500
+			line-height: 1.1em
+		h2
+			font-size: 2.3em
+			font-weight: 100
+			display: inline-block
+			line-height: 1.7em
+			margin-top: 7px
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				height: 2px
+				width: 100%
+				background: #604bc9
+		p
+			margin-top: 27px
+			font-size: 2.4em
+			color: #fff
+			text-transform: uppercase
+			span
+				background: white
+				font-size: 0.9em
+				font-weight: 600
+				margin-left: 47px
+				line-height: 0.9em
+				color: #f2385a
+				display: inline-block
+				border-radius: 20px
+				position: relative
+				padding: 0px 28px
+	.mid-icon
+		position: absolute
+		top: 18px
+		right: 53px
+		width: 545px
+.breadcrumbs
+	margin-top: 48px
+	background: url(../img/icons/p3.png)
+	ul
+		padding-left: 74px
+		li
+			line-height: 0.8em
+			a
+				font-size: 1em
+				color: #48568d
+				text-transform: uppercase
+				display: inline-block
+				line-height: 1.2em
+
+.filters
+	padding-top: 25px
+	.f-filters
+		padding-left: 284px
+		li
+			margin-right: 1px
+			&:first-child
+				a
+					width: 53px
+					height: 30px
+			a
+				display: inline-block
+				background: #f2385a
+				padding: 3px 6px
+				font-size: 1.2em
+				text-transform: uppercase
+				color: #fff
+				border-radius: 5px
+				position: relative
+				width: 30px
+				height: 30px
+				text-align: center
+				&:before
+					content: ''
+					position: absolute
+					top: 3px
+					left: 3px
+					background: #c32b47
+					height: 100%
+					width: 100%
+					border-radius: 5px
+					z-index: -1
+				&:hover
+					background: #bebebe
+					&:before
+						background: #aaaaaa
+				img
+					width: 23px
+					position: absolute
+					top: 8px
+					left: 4px
+					&.face
+						width: 12px
+						top: 6px
+						left: 12px
+					&.icon-2
+						top: 4px
+					&.icon-3
+						width: 18px
+						top: 4px
+						left: 5px
+					&.fire
+						width: 18px
+						top: 6px
+						left: 6px
+					&.like
+						width: 21px
+						top: 4px
+						left: 5px
+	.select-holder
+		margin-left: 15px
+		background: #f2385a
+		color: #fff
+		height: 30px
+		width: 262px
+		border-radius: 5px
+		padding: 0 5px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: 3px
+			left: 3px
+			background: #c32b47
+			height: 100%
+			width: 100%
+			border-radius: 8px
+			z-index: -1
+		select
+			background: #f2385a
+			border: 0
+			color: #fff
+			padding-left: 25px
+			height: 30px
+			width: 93px
+			font-size: 1.3em
+			text-transform: uppercase
+			outline: none
+			&.select-1
+				padding-left: 10px
+				border-left: 1px solid #fff
+		.select-item
+			position: relative
+			padding-right: 29px
+			&:after
+				content: ''
+				position: absolute
+				background: url(../img/icons/f-arrow.png) 50% 50%
+				height: 7px
+				width: 13px
+				top: 12px
+				right: 3px
+				background-size: cover
+			&:first-child
+				&:before
+					content: ''
+					height: 22px
+					width: 15px
+					background: url(../img/icons/map-pin.png) 50% 50%
+					position: absolute
+					top: 4px
+					left: 3px
+					background-size: cover
+	.search-holder
+		margin-left: 21px
+		border: 1px solid red
+		border-radius: 5px
+		height: 28px
+		padding-left: 41px
+		position: relative
+		width: 259px
+		background: #fff
+		top: 2px
+		&:before
+			content: ''
+			position: absolute
+			top: -3px
+			left: -3px
+			background: #c32b47
+			height: 100%
+			width: 100%
+			border-radius: 5px
+			z-index: -1
+		&:after
+			content: ''
+			position: absolute
+			background: url(../img/icons/f-search.png) 50% 50%
+			height: 17px
+			width: 17px
+			top: 3px
+			left: 4px
+			background-size: cover
+		input
+			background: transparent
+			height: 25px
+			outline: none
+			color: #f2385a
+			&::-webkit-input-placeholder
+				color:#f2385a
+			&::-moz-placeholder
+				color:#f2385a
+			&:-moz-placeholder
+				color:#f2385a
+			&:-ms-input-placeholder
+				color:#f2385a
+
+.content
+	margin-top: 19px
+	.content-container
+		padding-left: 279px
+		padding-right: 280px
+	.bunners
+		position: absolute
+		top: 3px
+		left: 4px
+		.bunner
+			height: 330px
+			width: 260px
+			background: #507299
+			margin-bottom: 20px
+	.profile-panell
+		position: absolute
+		width: 260px
+		right: -4px
+		top: 5px
+		border: 2px solid #507299
+		padding-bottom: 10px
+		.top-info
+			padding: 16px 18px
+			text-align: center
+			border-bottom: 2px solid #3c4a73
+		.id
+			text-align: left
+			color: #8991a0
+		.image-holder
+			width: 85px
+			display: inline-block
+			margin-top: 22px
+		h4
+			text-transform: uppercase
+			color: #3c4a73
+			padding-top: 15px
+			font-size: 1em
+			border-top: 1px solid #fff
+		.button
+			background: #f2385a
+			display: block
+			margin-top: 41px
+			padding: 2px 16px
+			border-radius: 14px
+			text-transform: uppercase
+			font-size: 1.2em
+			color: white
+			width: 210px
+			margin: 0 auto
+			margin-top: 20px
+		.bott-image
+			text-align: center
+			margin-top: 60px
+		ul
+			margin-top: 10px
+		li
+			padding-left: 50px
+			padding-top: 10px
+			padding-bottom: 8px
+			position: relative
+			a
+				font-size: 1.2em
+				text-transform: uppercase
+				color: #929ab2
+				position: relative
+				display: block
+				&:after
+					content: ''
+					position: absolute
+					bottom: -8px
+					left: 0
+					width: 100%
+					height: 1px
+					background: #3c4a73
+			&:last-child
+				a
+					&:after
+						display: none
+
+				&.active
+					&:before
+						content: ''
+						position: absolute
+						top: 8px
+						left: 16px
+						background: #4ad9d9
+						height: 7px
+						width: 7px
+						border-radius: 50%
+	.repost-cards
+		margin: -5px	
+		.card
+			padding: 10px
+			padding-top: 5px
+			padding-bottom: 10px
+			height: 335px
+			margin-bottom: 15px
+			&.vk
+				.card-container
+					background: #507299
+			&.fb
+				.card-top,
+				.card-bott
+					border-color: #43648c
+				.card-container
+					background: #3b5998
+			&.od
+				.card-top,
+				.card-bott
+					border-color: #fff
+				.card-container
+					background: #ff9811
+			.card-top
+				height: 40px
+				padding: 8px 8px 0 8px
+				border-bottom: 1px solid #43648c
+				ul
+					width: 65%
+				a
+					display: inline-block
+					height: 22px
+					width: 15px
+					margin: 0 4px
+					&.face
+						width: 11px
+						margin-left: 9px
+					&.star
+						margin-left: 6px
+						width: 21px
+					&.ico-2
+						margin-left: 3px
+						width: 22px
+					&.fire
+						margin-left: 2px
+						width: 18px
+					&.like
+						margin-left: 5px
+						width: 21px
+					&.vk
+						width: 22px
+				.counter
+					text-align: right
+					width: 35%
+					span
+						font-size: 2.2em
+						font-weight: 700
+						color: #fff
+						width: 77px
+						display: inline-block
+						overflow: hidden
+						line-height: 0.8em
+						height: 27px
+
+			.card-content
+				height: 253px
+				position: relative
+				.button
+					position: absolute
+					bottom: 10px
+					left: 50%
+					-webkit-transform: translateX(-50%)
+					-ms-transform: translateX(-50%)
+					transform: translateX(-50%)
+					background: #f2385a
+					color: #fff
+					border-radius: 5px
+					padding: 4px 21px
+					text-transform: uppercase
+					z-index: 2
+					display: inline-block
+					font-size: 1.2em
+			.card-bott
+				height: 37px
+				padding: 8px
+				border-top: 1px solid #43648c
+				.srs-lf
+					width: 65%
+				.srs-lg
+					width: 35%
+				.see
+					img
+						width: 25px
+						margin-left: 2px
+				.reposts
+					margin-left: 18px
+					img
+						width: 15px
+						height: 21px
+						
+				span
+					font-size: 1.3em
+					color: #fff
+					display: inline-block
+					vertical-align: middle
+					font-weight: 600
+					margin-left: 4px
+				img
+					width: 21px
+					height: 15px
+					margin-right: 4px
+					display: inline-block
+					vertical-align: middle
+				.like
+					img
+						margin-right: 5px
+						width: 25px
+						height: 23px
+				.repost
+					img
+						height: 19px
+						width: 23px
+				ul
+					&:last-child
+						text-align: right
+.pagination
+	padding-top: 13px
+	padding-bottom: 28px
+.pagination-list
+	text-align: center
+	li
+		vertical-align: middle
+		a
+			display: inline-block
+			height: 32px
+			width: 32px
+			background: #f2385a
+			margin: 0 2px
+			border-radius: 5px
+			color: #fff
+			line-height: 2.5em
+			position: relative
+			background-size: cover
+			vertical-align: middle
+			&:before
+				content: ''
+				position: absolute
+				top: 2px
+				left: 2px
+				background: #c32b47
+				height: 100%
+				width: 100%
+				border-radius: 8px
+				z-index: -1
+			&.prev-1
+				background: url(../img/icons/prev-1.png) 50% 50% no-repeat
+				width: 28px
+				height: 29px
+				background-size: cover
+				&:before
+					display: none
+			&.prev-2
+				background: url(../img/icons/prev-2.png) 50% 50% no-repeat
+				width: 34px
+				height: 29px
+				background-size: cover
+				margin-right: 13px
+				&:before
+					display: none
+			&.next-1
+				background: url(../img/icons/next-1.png) 50% 50% no-repeat
+				background-size: cover
+				margin-left: 13px
+				width: 34px
+				height: 29px
+				&:before
+					display: none
+			&.next-2
+				background: url(../img/icons/next-2.png) 50% 50% no-repeat
+				background-size: cover
+				width: 28px
+				height: 29px
+				&:before
+					display: none
+
+.best-bloks
+	padding-top: 31px
+	background: #f1f3f9
+	padding-bottom: 22px
+	.text-holder
+		padding-right: 6px
+		text-align: center
+		.text-height
+			line-height: 1.35em
+			overflow: hidden
+			height: 78px
+	.btn-holder
+		text-align: right
+		display: block
+		.read-more
+			background: url(../img/icons/read-more.png)
+			color: #fff
+			height: 20px
+			display: inline-block
+			line-height: 20px
+			width: 115px
+			background-size: cover
+			margin-top: 17px
+			font-size: 1em
+			padding-left: 6px
+			font-weight: 500
+			text-align: left
+.prop-slider
+	text-align: center
+	background: #ffffff
+	padding-top: 33px
+	padding-bottom: 14px
+	.bx-wrapper
+		border: 0
+		box-shadow: none
+		background: transparent
+		margin: 0
+		.slider-item
+			margin: -5px
+			display: inline-block
+			a
+				display: inline-block
+				padding: 5px
+		.bx-next
+			background: url(../img/icons/slider-right.png) no-repeat 50% 50%
+			background-size: cover
+			right: -15px
+		.bx-prev
+			background: url(../img/icons/slider-left.png) no-repeat 50% 50%
+			background-size: cover
+			left: -15px
+		p
+			color: #ff2151
+			height: 66px
+			overflow: hidden
+		.image-holder
+			height: 174px
+			margin-bottom: 18px
+		.bx-pager
+			display: none
+
+
+
+.mail
+	text-align: center
+	padding-top: 32px
+	padding-bottom: 25px
+	input,
+	textarea
+		width: 100%
+		outline: none
+		height: 27px
+		border-radius: 5px
+		position: relative
+		text-transform: uppercase
+	.form-group
+		position: relative
+		margin-bottom: 23px
+		padding-left: 45px
+		background: #fff
+		border-radius: 5px
+		&:after
+			content: ''
+			position: absolute
+			top: -3px
+			left: -3px
+			background: #c32b47
+			height: 100%
+			width: 100%
+			border-radius: 5px
+			z-index: -1
+		.icon
+			position: absolute
+			top: 1px
+			left: 7px
+			z-index: 2
+			width: 20px
+			height: 24px
+			img
+				width: 100%
+			&.person
+				width: 15px
+	.area-holder
+		padding-left: 30px
+		.form-group
+			height: 129px
+			padding: 10px
+			margin-bottom: 0
+			textarea
+				border: none
+	.btn-holder
+		.send
+			display: inline-block
+			height: 30px
+			width: 120px
+			background: #f2385a
+			margin: 0 2px
+			border-radius: 5px
+			color: #fff
+			line-height: 1.5em
+			position: relative
+			background-size: cover
+			vertical-align: middle
+			font-size: 1.2em
+			text-transform: uppercase
+		.bttn
+			display: inline-block
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				top: 3px
+				left: 2px
+				background: #c32b47
+				height: 100%
+				width: 100%
+				border-radius: 5px
+				z-index: -1
+.drawing
+	padding-top: 31px
+	text-align: center
+	background: #e9ebf1
+	padding-bottom: 10px
+	.best-holder
+		.blocks-holder
+			margin: -5px
+		.best-item
+			padding: 5px
+			.image-holder
+				margin-bottom: 5px
+				height: 185px
+			p
+				color: #ff2151
+				height: 114px
+				overflow: hidden
+
+
+.footer
+	background-image: url(../img/icons/p3.png)
+	padding-top: 27px
+	h4
+		font-size: 1.2em
+		text-transform: uppercase
+		padding-left: 7px
+		font-weight: 500
+		color: #fff
+		margin-bottom: 7px
+	.foot-line
+		background: url(../img/icons/top-line.png) 50% 50% no-repeat
+		background-size: cover
+		height: 3px
+	.foot-navigation
+		width: 100%
+		max-width: 277px
+		a
+			font-size: 1.2em
+			text-transform: uppercase
+			display: inline-block
+			line-height: 1.3em
+			color: #ffffff
+			&.active
+				text-decoration: underline
+		.our-socials
+			margin-top: 57px
+			a
+				width: 30px
+				height: 30px
+				background: white
+				display: inline-block
+				border-radius: 5px
+			ul
+				margin-top: 15px
+				li
+					margin-right: 6px
+	.foot-best
+		width: 100%
+		max-width: 538px
+		.best-block
+			width: 49%
+			padding: 7px
+			.image-holder
+				height: 180px
+				margin-bottom: 14px
+			.text-holder
+				font-size: 1em
+				color: #fff
+				height: 63px
+				overflow: hidden
+				p
+					color: #fff
+
+.rep-left
+	padding: 0 10px
+	padding-bottom: 15px
+	h5
+		text-align: center
+		font-size: 1.2em
+		text-transform: uppercase
+		font-weight: 100
+		line-height: 1.4em
+		color: #3c4a73
+	.repost-img
+		.image-holder
+			height: 332px
+			margin-bottom: 15px
+	.repost-stat
+		margin-top: 20px
+		.stat-counter
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				top: 0
+				right: 0
+				height: 100%
+				width: 1px
+				background: #d8d8d8
+		.stat-blocks
+			margin-top: 10px
+			padding-bottom: 2px
+			border-bottom: 1px solid #d8d8d8
+		.st-block
+			padding-left: 40px
+			position: relative
+			line-height: 2em
+			height: 30px
+			overflow: hidden
+			text-overflow: ellipsis
+			white-space: nowrap
+			&.city
+				padding-left: 0
+			.image-holder
+				position: absolute
+				top: -1px
+				left: 4px
+				width: 27px
+				height: 35px
+				&.person
+					left: 12px
+					width: 15px
+				&.like-up
+					width: 20px
+					top: -1px
+					left: 9px
+				&.like-bel
+					width: 21px
+					left: 7px
+					top: 2px
+				&.map-pin
+					width: 16px
+					left: 9px
+			span
+				font-size: 1.2em
+				font-weight: 600
+				color: #3c4a73
+			p
+				font-size: 0.9em
+				text-transform: uppercase
+			b
+				font-size: 1.3em
+				margin-left: 8px
+	.repost-soc
+		margin-top: 14px
+		padding-bottom: 10px
+		border-bottom: 1px solid #d8d8d8
+		ul
+			margin-top: 11px
+		a
+			height: 30px
+			width: 30px
+			display: inline-block
+			border-radius: 5px
+			background: #f2385a
+			margin: 0 4px
+	.comments
+		padding-top: 17px
+		.form-group
+			margin-top: 9px
+			padding-right: 121px
+			height: 27px
+			border-radius: 5px
+			padding-top: 3px
+			background: white
+			&:after
+				content: ''
+				position: absolute
+				top: -3px
+				left: -3px
+				background: #c32b47
+				height: 100%
+				width: 100%
+				border-radius: 5px
+				z-index: -1
+			input
+				background: transparent
+				border: 0
+				width: 100%
+				outline: none
+				text-transform: uppercase
+				padding-left: 10px
+			button
+				display: inline-block
+				height: 30px
+				width: 120px
+				background: #f2385a
+				margin: 0 2px
+				border-radius: 5px
+				color: #fff
+				line-height: 1.5em
+				position: relative
+				background-size: cover
+				vertical-align: middle
+				font-size: 1.2em
+				text-transform: uppercase
+				position: absolute
+				top: -3px
+				right: -1px
+		.comments-container
+			padding-top: 14px
+			.comment
+				margin-bottom: 20px
+				h6
+					font-size: 1.18em
+					line-height: 1.4em
+					color: #3c4a73
+				.date
+					font-size: 0.92em
+					color: #a3a3a3
+				p
+					margin-top: 7px
+					max-height: 61px
+					overflow: hidden
+					color: #3c4a73
+			.btn-holder
+				text-align: right
+				.read-more
+					background: url(../img/icons/read-more.png)
+					color: #fff
+					height: 20px
+					display: inline-block
+					line-height: 20px
+					width: 115px
+					background-size: cover
+					margin-top: 17px
+					font-size: 1em
+					padding-left: 6px
+					font-weight: 500
+					text-align: left
+
+
+.rep-rght
+	padding-left: 10px
+	h2
+		font-size: 1.55em
+		text-transform: uppercase
+		line-height: 1.4em
+		margin-top: 3px
+		margin-bottom: 23px
+		color: #3c4a73
+	.date
+		h6
+			font-size: 0.94em
+			text-transform: uppercase
+			font-weight: 100
+			color: #3c4a73
+		p
+			font-size: 1.8em
+			margin-top: 2px
+			font-weight: 600
+			color: #f2385a
+	.share
+		vertical-align: bottom
+		position: relative
+		top: 4px
+		right: 4px
+		text-align: right
+		a
+			margin-left: 12px
+			max-width: 33px
+			display: inline-block
+	.text-holder
+		margin-top: 21px
+		line-height: 1.35em
+		padding-bottom: 16px
+		border-bottom: 1px solid #d8d8d8
+		color: #3c4a73
+		p
+			color: inherit
+	.btn-holder
+		text-align: center
+		padding-top: 14px
+		padding-bottom: 4px
+		border-bottom: 1px solid #d8d8d8
+		.apply
+			display: inline-block
+			background: #f2385a
+			padding: 3px 6px
+			font-size: 1.2em
+			text-transform: uppercase
+			color: #fff
+			border-radius: 5px
+			position: relative
+			width: 178px
+			height: 33px
+			text-align: center
+			line-height: 33px
+			&:after
+				content: ''
+				position: absolute
+				top: 3px
+				left: 3px
+				background: #c32b47
+				height: 100%
+				width: 100%
+				border-radius: 5px
+				z-index: -1
+		ul
+			margin-top: 16px
+			a
+				display: inline-block
+				height: 20px
+				width: 20px
+				margin: 0 10px
+	.recomendations
+		padding-top: 10px
+		h4
+			font-size: 1.2em
+			text-align: center
+			text-transform: uppercase
+			color: #3c4a73
+			font-weight: 100
+			margin-bottom: 25px
+		.inline-layout
+			margin: -10px
+			.recom-item
+				padding: 10px
+				padding-top: 5px
+		.image-holder
+			height: 120px
+		.text-holder
+			height: 63px
+			padding-bottom: 0
+			overflow: hidden
+			margin-top: 17px
+			border: none

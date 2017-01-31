@@ -1,0 +1,627 @@
+doctype html
+html(lang='ru')
+	head
+		title main
+
+		include ./partials/head.jade
+
+	body
+		include ./partials/noscript.jade
+		include ./partials/top-line.jade
+
+
+		section.filters
+			.container
+				.filters-holder.inline-layout
+					ul.f-filters.inline-layout
+						li
+							a(href="#") Все
+						li
+							a(href="#")
+								img(src="img/icons/f-vk.png", alt="")
+						li
+							a(href="#")
+								img.face(src="img/icons/f-facebook.png", alt="")
+						li
+							a(href="#")
+								img.like(src="img/icons/f-like.png", alt="")
+						li
+							a(href="#")
+								img.fire(src="img/icons/f-fire.png", alt="")
+						li
+							a(href="#")
+								img.icon-2(src="img/icons/f-2.png", alt="")
+						li
+							a(href="#")
+								img.icon-3(src="img/icons/f-3.png", alt="")
+					.select-holder.inline-layout
+						.select-item
+							select#3(name="")
+								option(value="d", disabled, selected) Страна
+								option(value="d") Украина
+								option(value="d") Грузия
+								option(value="d") Россия
+								option(value="d") Казахстан
+								option(value="d") Белорусия
+						.select-item
+							select.select-1#3(name="")
+								option(value="d", disabled, selected) Город
+								option(value="d") Киев
+								option(value="d") Днепропетровск
+								option(value="d") Одесса
+								option(value="d") Харьков
+								option(value="d") Чернигов
+					.search-holder
+						input(type="text", placeholder="ПОИСК")
+
+		section.content
+			.container
+				.content-container
+					.bunners
+						.bunner
+						.bunner
+					.repost-cards.inline-layout.col-3
+						.card.vk
+							.card-container
+								.card-top.inline-layout.col-2
+									ul.inline-layout
+										li
+											a(href="#").face
+												.image-holder
+													img(src="img/icons/f-facebook.png", alt="")
+										li
+											a(href="#").star
+												.image-holder
+													img(src="img/icons/f-star.png", alt="")
+										li
+											a(href="#").ico-2
+												.image-holder
+													img(src="img/icons/f-2.png", alt="")
+										li
+											a(href="#").fire
+												.image-holder
+													img(src="img/icons/f-fire.png", alt="")
+										li
+											a(href="#").like
+												.image-holder
+													img(src="img/icons/f-like.png", alt="")
+										
+									.counter
+										span 20.09
+								.card-content
+									.image-holder
+										img(src="img/content/card-1.png", alt="")
+									a(href="#").button Подробнее
+								.card-bott.inline-layout.col-2
+									ul.inline-layout.srs-lf
+										li
+											a(href="#").see
+												img(src="img/icons/eye.png", alt="")
+												span 1278
+										li
+											a(href="#").reposts
+												img(src="img/icons/person.png", alt="")
+												span 948
+									ul.inline-layout.srs-lg
+										li
+											a(href="#").like
+												img(src="img/icons/like-red.png", alt="")
+										li
+											a(href="#").repost
+												img(src="img/icons/repsot.png", alt="")
+						.card.fb
+							.card-container
+								.card-top.inline-layout
+									ul.inline-layout
+										li
+											a(href="#").vk
+												.image-holder
+													img(src="img/icons/f-vk.png", alt="")
+										li
+											a(href="#").star
+												.image-holder
+													img(src="img/icons/f-star.png", alt="")
+										li
+											a(href="#").ico-2
+												.image-holder
+													img(src="img/icons/f-2.png", alt="")
+										li
+											a(href="#").fire
+												.image-holder
+													img(src="img/icons/f-fire.png", alt="")
+										li
+											a(href="#").like
+												.image-holder
+													img(src="img/icons/f-like.png", alt="")
+									.counter
+										span 20.09
+								.card-content
+									.image-holder
+										img(src="img/content/card-1.png", alt="")
+									a(href="#").button Подробнее
+								.card-bott.inline-layout.col-2
+									ul.inline-layout.srs-lf
+										li
+											a(href="#").see
+												img(src="img/icons/eye.png", alt="")
+												span 1278
+										li
+											a(href="#").reposts
+												img(src="img/icons/person.png", alt="")
+												span 948
+									ul.inline-layout.srs-lg
+										li
+											a(href="#").like
+												img(src="img/icons/like-red.png", alt="")
+										li
+											a(href="#").repost
+												img(src="img/icons/repsot.png", alt="")
+						.card.od
+							.card-container
+								.card-top.inline-layout
+									ul.inline-layout
+										li
+											a(href="#").vk
+												.image-holder
+													img(src="img/icons/f-vk.png", alt="")
+										li
+											a(href="#").star
+												.image-holder
+													img(src="img/icons/f-star.png", alt="")
+										li
+											a(href="#").ico-2
+												.image-holder
+													img(src="img/icons/f-2.png", alt="")
+										li
+											a(href="#").fire
+												.image-holder
+													img(src="img/icons/f-fire.png", alt="")
+										li
+											a(href="#").like
+												.image-holder
+													img(src="img/icons/f-like.png", alt="")
+									.counter
+										span 20.09
+								.card-content
+									.image-holder
+										img(src="img/content/card-1.png", alt="")
+									a(href="#").button Подробнее
+								.card-bott.inline-layout.col-2
+									ul.inline-layout.srs-lf
+										li
+											a(href="#").see
+												img(src="img/icons/eye.png", alt="")
+												span 1278
+										li
+											a(href="#").reposts
+												img(src="img/icons/person.png", alt="")
+												span 948
+									ul.inline-layout.srs-lg
+										li
+											a(href="#").like
+												img(src="img/icons/like-red.png", alt="")
+										li
+											a(href="#").repost
+												img(src="img/icons/repsot.png", alt="")
+						.card.vk
+							.card-container
+								.card-top.inline-layout.col-2
+									ul.inline-layout
+										li
+											a(href="#").face
+												.image-holder
+													img(src="img/icons/f-facebook.png", alt="")
+										li
+											a(href="#").star
+												.image-holder
+													img(src="img/icons/f-star.png", alt="")
+										li
+											a(href="#").ico-2
+												.image-holder
+													img(src="img/icons/f-2.png", alt="")
+										li
+											a(href="#").fire
+												.image-holder
+													img(src="img/icons/f-fire.png", alt="")
+										li
+											a(href="#").like
+												.image-holder
+													img(src="img/icons/f-like.png", alt="")
+										
+									.counter
+										span 20.09
+								.card-content
+									.image-holder
+										img(src="img/content/card-1.png", alt="")
+									a(href="#").button Подробнее
+								.card-bott.inline-layout.col-2
+									ul.inline-layout.srs-lf
+										li
+											a(href="#").see
+												img(src="img/icons/eye.png", alt="")
+												span 1278
+										li
+											a(href="#").reposts
+												img(src="img/icons/person.png", alt="")
+												span 948
+									ul.inline-layout.srs-lg
+										li
+											a(href="#").like
+												img(src="img/icons/like-red.png", alt="")
+										li
+											a(href="#").repost
+												img(src="img/icons/repsot.png", alt="")
+						.card.fb
+							.card-container
+								.card-top.inline-layout
+									ul.inline-layout
+										li
+											a(href="#").vk
+												.image-holder
+													img(src="img/icons/f-vk.png", alt="")
+										li
+											a(href="#").star
+												.image-holder
+													img(src="img/icons/f-star.png", alt="")
+										li
+											a(href="#").ico-2
+												.image-holder
+													img(src="img/icons/f-2.png", alt="")
+										li
+											a(href="#").fire
+												.image-holder
+													img(src="img/icons/f-fire.png", alt="")
+										li
+											a(href="#").like
+												.image-holder
+													img(src="img/icons/f-like.png", alt="")
+									.counter
+										span 20.09
+								.card-content
+									.image-holder
+										img(src="img/content/card-1.png", alt="")
+									a(href="#").button Подробнее
+								.card-bott.inline-layout.col-2
+									ul.inline-layout.srs-lf
+										li
+											a(href="#").see
+												img(src="img/icons/eye.png", alt="")
+												span 1278
+										li
+											a(href="#").reposts
+												img(src="img/icons/person.png", alt="")
+												span 948
+									ul.inline-layout.srs-lg
+										li
+											a(href="#").like
+												img(src="img/icons/like-red.png", alt="")
+										li
+											a(href="#").repost
+												img(src="img/icons/repsot.png", alt="")
+						.card.od
+							.card-container
+								.card-top.inline-layout
+									ul.inline-layout
+										li
+											a(href="#").vk
+												.image-holder
+													img(src="img/icons/f-vk.png", alt="")
+										li
+											a(href="#").star
+												.image-holder
+													img(src="img/icons/f-star.png", alt="")
+										li
+											a(href="#").ico-2
+												.image-holder
+													img(src="img/icons/f-2.png", alt="")
+										li
+											a(href="#").fire
+												.image-holder
+													img(src="img/icons/f-fire.png", alt="")
+										li
+											a(href="#").like
+												.image-holder
+													img(src="img/icons/f-like.png", alt="")
+									.counter
+										span 20.09
+								.card-content
+									.image-holder
+										img(src="img/content/card-1.png", alt="")
+									a(href="#").button Подробнее
+								.card-bott.inline-layout.col-2
+									ul.inline-layout.srs-lf
+										li
+											a(href="#").see
+												img(src="img/icons/eye.png", alt="")
+												span 1278
+										li
+											a(href="#").reposts
+												img(src="img/icons/person.png", alt="")
+												span 948
+									ul.inline-layout.srs-lg
+										li
+											a(href="#").like
+												img(src="img/icons/like-red.png", alt="")
+										li
+											a(href="#").repost
+												img(src="img/icons/repsot.png", alt="")
+
+
+
+					.profile-panell
+						.top-info
+							.id ID 325230972
+							.image-holder
+								img(src="img/icons/user-1.png", alt="")
+							h4 Георгий Победоносец
+						a(href="#").button Добавить розыгрыш
+						ul
+							li
+								a(href="#") Избранное
+							li
+								a(href="#") Участвую
+							li
+								a(href="#") Добавленое
+							li
+								a(href="#") Результаты
+							li
+								a(href="#") Пожаловаться
+
+
+		section.pagination
+			.container
+					ul.pagination-list.inline-layout
+						li
+							a(href="#").prev-1
+						li
+							a(href="#").prev-2
+						li
+							a(href="#") 1
+						li
+							a(href="#") 2
+						li
+							a(href="#") 3
+						li
+							a(href="#") 4
+						li
+							a(href="#") 5
+						li
+							a(href="#").next-1
+						li
+							a(href="#").next-2
+
+		section.best-bloks
+			.container.container-720
+				.inline-layout
+					.text-holder
+						h3.type-icon
+							img(src="img/icons/h-info.png", alt="")
+							|тут сео текст
+						.text-height
+							p
+								|Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ipsa ducimus unde obcaecati, repellat impedit, assumenda animi aspernatur dolore iure, voluptatem deleniti quibusdam repellendus provident culpa nemo a nulla ab|At atque cupiditate perferendis, odio, quos dolorum nisi, animi corporis explicabo possimus soluta, velit consequuntur nihil officia id accusamus eum impedit dolorem illum. Deserunt eveniet odio, nostrum perspiciatis minima dolores|Eius in, fugiat maxime saepe ea alias sed. Ea facere quidem at necessitatibus maxime natus. Suscipit dolore ut rerum aperiam, fugiat reiciendis beatae sint delectus corporis, a dicta velit natus|Corporis, deserunt ratione nam sapiente iusto optio similique libero vero aliquid. Aliquid, quaerat minima laudantium in voluptatum. Quaerat iste, laborum. Placeat, iste quas doloremque magnam rerum doloribus labore ratione pariatur|Et fugit laudantium asperiores, dolore vel neque, optio, voluptatibus dolor laborum itaque quo repellendus voluptatem natus quae reprehenderit porro cum consequatur ipsa. Harum dolore, odio inventore nam iste dolores libero|Nemo nostrum tempora quisquam excepturi neque, odit voluptas omnis eius voluptatem officiis saepe hic doloremque at similique laudantium velit optio nihil sunt voluptatibus perferendis odio quia. Odio, corporis voluptates reiciendis|Facere molestias eius quibusdam suscipit sed, labore et deserunt in similique veniam? Nesciunt facere dolorum ut modi esse quisquam quis unde tenetur facilis, nisi nulla voluptatibus laboriosam itaque mollitia iusto|Illum quisquam ratione ut fuga repellat nemo, ipsa animi non, eius dolorem impedit accusantium, unde ducimus. Nostrum eos est ab, odio quas voluptatem expedita assumenda eveniet placeat fuga, in ipsam|Non voluptate, deleniti praesentium! Quis obcaecati, neque blanditiis doloremque nihil sunt amet reprehenderit nesciunt iure. Incidunt cum repellat nostrum blanditiis impedit et qui. Suscipit earum itaque, a quia dicta in|Consectetur molestias dolores facere, nihil voluptates aliquid vitae, cupiditate eius aspernatur a eligendi nesciunt nam amet nostrum illo vel voluptatum. Eius magni, unde quod cum blanditiis, explicabo incidunt eos alias.
+					.btn-holder
+						a(href="#").read-more читать еще...
+
+		section.drawing.prop-slider
+			.container.container-720
+				.best-holder
+					h3.type-icon
+						img(src="img/icons/h-star.png", alt="")
+						|лучшие розыгрыши
+					ul.bxslider
+						li
+							.slider-item.inline-layout.col-3
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+						li
+							.slider-item.inline-layout.col-3
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+						li
+							.slider-item.inline-layout.col-3
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+						li
+							.slider-item.inline-layout.col-3
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+
+		
+
+		section.prop-slider
+			.container.container-720
+				h3.type-icon
+					img(src="img/icons/h-fire.png", alt="")
+					|Горячие предложения
+				.inline-layout
+					ul.bxslider
+						li
+							.slider-item.inline-layout.col-3
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+						li
+							.slider-item.inline-layout.col-3
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+						li
+							.slider-item.inline-layout.col-3
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+						li
+							.slider-item.inline-layout.col-3
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+								a(href="#")
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+									p
+										|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
+
+
+		section.mail
+			.container.container-720
+				h3.type-icon.mail-ico
+					img(src="img/icons/h-mail.png", alt="")
+					|Обратная связь
+				.mail-box
+					form
+						.inline-layout.col-2
+							ul
+								li
+									.form-group
+										.icon.person
+											img(src="img/icons/person-2.svg", alt="")
+										input(type="text", placeholder="Ваше имя")
+								li
+									.form-group
+										.icon
+											img(src="img/icons/phone-2.svg", alt="")
+										input(type="text", placeholder="Номер телефона")
+								li
+									.form-group
+										.icon
+											img(src="img/icons/mail-2.svg", alt="")
+										input(type="text", placeholder="Ваш e-mail")
+							.area-holder
+								.form-group
+									textarea#de(name="er", placeholder="Введите сообщение")
+						.btn-holder
+							.bttn
+								button.send Отправить
+			
+
+
+						
+
+
+					
+
+
+							
+		include ./partials/footer.jade
+
+		include ./partials/scripts.jade

@@ -1,0 +1,234 @@
+doctype html
+html(lang='ru')
+	head
+		title main
+
+		include ./partials/head.jade
+
+	body
+		include ./partials/noscript.jade
+		include ./partials/top-line.jade
+
+
+		section.filters
+			.container
+				.filters-holder.inline-layout
+					ul.f-filters.inline-layout
+						li
+							a(href="#") Все
+						li
+							a(href="#")
+								img(src="img/icons/f-vk.png", alt="")
+						li
+							a(href="#")
+								img.face(src="img/icons/f-facebook.png", alt="")
+						li
+							a(href="#")
+								img.like(src="img/icons/f-like.png", alt="")
+						li
+							a(href="#")
+								img.fire(src="img/icons/f-fire.png", alt="")
+						li
+							a(href="#")
+								img.icon-2(src="img/icons/f-2.png", alt="")
+						li
+							a(href="#")
+								img.icon-3(src="img/icons/f-3.png", alt="")
+					.select-holder.inline-layout
+						.select-item
+							select#3(name="")
+								option(value="d", disabled, selected) Страна
+								option(value="d") Украина
+								option(value="d") Грузия
+								option(value="d") Россия
+								option(value="d") Казахстан
+								option(value="d") Белорусия
+						.select-item
+							select.select-1#3(name="")
+								option(value="d", disabled, selected) Город
+								option(value="d") Киев
+								option(value="d") Днепропетровск
+								option(value="d") Одесса
+								option(value="d") Харьков
+								option(value="d") Чернигов
+					.search-holder
+						input(type="text", placeholder="ПОИСК")
+
+		section.content
+			.container
+				.content-container
+					.bunners
+						.bunner
+						.bunner
+					.inline-layout.col-2
+						.rep-left
+							.repost-img
+								.image-holder
+									img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+									.img(style='background-image: url("img/content/best-1.jpg")')
+							.repost-stat
+								h5 Статистика по розыгрышу
+								.stat-blocks.inline-layout.col-2
+									.stat-counter
+										.inline-layout.col-2
+											.st-block
+												.image-holder
+													img(src="img/icons/bl-eye.svg", alt="")
+												span 1278
+											.st-block
+												.image-holder.person
+													img(src="img/icons/person-blue.svg", alt="")
+												span 328
+									.like-counter
+										.inline-layout.col-2
+											a(href="#").st-block
+												.image-holder.like-up
+													img(src="img/icons/like-up.svg", alt="")
+												span 328
+											a(href="#").st-block
+												.image-holder.like-bel
+													img(src="img/icons/like-bel.svg", alt="")
+												span 328
+								.stat-blocks.inline-layout.col-2
+									.st-block.countr
+										.image-holder.map-pin
+											img(src="img/icons/location-blue.svg", alt="")
+										p
+											|Страна:
+											b Украина
+									.st-block.city
+										p
+											|город:
+											b Днепропетровск
+							.repost-soc
+								h5 Поделиться с друзьями
+								ul.inline-layout
+									li
+										a(href="#")
+									li
+										a(href="#")
+									li
+										a(href="#")
+									li
+										a(href="#")
+									li
+										a(href="#")
+									li
+										a(href="#")
+									li
+										a(href="#")
+									li
+										a(href="#")
+									li
+										a(href="#")
+									li
+										a(href="#")
+							.comments
+								h5 Коментарии
+								form(action="")
+									.form-group
+										input(type="text", placeholder="Оставить отзыв")
+										button  Отправить
+								.comments-container
+									.comment
+										h6 Георгий Победоносец
+										.date 22.11.2017
+										p
+											|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+									.comment
+										h6 Георгий Победоносец
+										.date 22.11.2017
+										p
+											|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+									.comment
+										h6 Георгий Победоносец
+										.date 22.11.2017
+										p
+											|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+									.btn-holder
+										a(href="#").read-more Читать еще... 
+
+
+						.rep-rght
+							h2 Заголовок розыгрыша
+							.inline-layout.col-2
+								.date
+									h6 розыгрыш состоится:
+									p 29.10.2017
+								.share
+									ul.inline-layout
+										li
+											a(href="#")
+												img(src="img/icons/vk-red.svg", alt="")
+										li
+											a(href="#")
+												img(src="img/icons/fire-red.svg", alt="")
+										li
+											a(href="#")
+												img(src="img/icons/ico-2-red.svg", alt="")
+										li
+											a(href="#")
+												img(src="img/icons/ico-3-red.svg", alt="")
+							.text-holder
+								p
+									|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+							.btn-holder
+								a(href="#").apply  Принять участие
+								ul.inline-layout
+									li
+										a(href="#")
+											.image-holder
+												img(src="img/icons/like-up.svg", alt="")
+									li
+										a(href="#")
+											.image-holder
+												img(src="img/icons/like-bel.svg", alt="")
+									li
+										a(href="#")
+											.image-holder
+												img(src="img/icons/like-her.svg", alt="")
+							.recomendations
+								h4 рекомендуем розыгрыши
+								.inline-layout.col-2
+									.recom-item
+										.image-holder
+											img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+											.img(style='background-image: url("img/content/best-1.jpg")')
+										.text-holder
+											p
+												|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat ma
+									.recom-item
+										.image-holder
+											img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+											.img(style='background-image: url("img/content/best-1.jpg")')
+										.text-holder
+											p
+												|Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat ma
+
+
+					.profile-panell
+						.top-info
+							.id ID 325230972
+							.image-holder
+								img(src="img/icons/user-1.png", alt="")
+							h4 Георгий Победоносец
+						a(href="#").button Добавить розыгрыш
+						ul
+							li
+								a(href="#") Избранное
+							li
+								a(href="#") Участвую
+							li
+								a(href="#") Добавленое
+							li
+								a(href="#") Результаты
+							li
+								a(href="#") Пожаловаться
+
+
+
+
+							
+		include ./partials/footer.jade
+
+		include ./partials/scripts.jade
