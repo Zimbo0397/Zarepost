@@ -1,0 +1,125 @@
+doctype html
+html(lang='ru')
+	head
+		title main
+
+		include ./partials/head.jade
+
+	body
+		include ./partials/noscript.jade
+		include ./partials/top-line.jade
+
+		
+		section.repost-header.ftrs
+			.container.container-720
+				h2 Добавленные розыгрыши
+				.filters
+					ul.inline-layout
+						li
+							a(href="#").active Все
+						li
+							a(href="#") Активные
+						li
+							a(href="#") Прошедшие
+		section.content
+			.container
+				.content-container
+					.bunners
+						.bunner
+						.bunner
+
+					.fill-form
+						.rep-list
+							table
+								tbody
+									tr
+										th Название
+										th
+											img(src="img/icons/bl-eye.svg", alt="")
+											|К-во просмотров
+										th
+											img(src="img/icons/person-blue.svg", alt="")
+											|к-во участников
+										th продвижение
+									tr
+										td
+											p
+												|розыгрыш телефона NOKIA Xperia
+										td
+											p 328
+										td
+											p 328
+										td
+											p
+												|VIP
+												br
+												|осталось 3 дня
+									tr
+										td
+											p
+												|розыгрыш телефона NOKIA Xperia
+										td
+											p 328
+										td
+											p 328
+										td
+											a(href="#").lob продвинуть
+									tr
+										td
+											p
+												|розыгрыш телефона NOKIA Xperia
+										td
+											p 328
+										td
+											p 328
+										td
+											a(href="#").lob продвинуть
+									tr
+										td
+											p
+												|розыгрыш телефона NOKIA Xperia
+										td
+											p 328
+										td
+											p 328
+										td
+											a(href="#").lob продвинуть
+						.description
+							.inline-layout.col-2
+								.desc-left
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+								.desc-right
+									.text-holder
+										p
+											| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum nesciunt labore voluptate alias officia deleniti, excepturi reprehenderit iusto omnis debitis consequatur unde fugit odit eum ducimus a rem. Similique, velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum nesciunt labore voluptate alias officia deleniti, excepturi reprehenderit iusto omnis debitis consequatur unde fugit odit eum ducimus a rem. Similique, velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum nesciunt labore voluptate alias officia deleniti, excepturi reprehenderit iusto omnis debitis consequatur unde fugit odit eum ducimus a rem. Similique, velit.
+										.btn-holder
+											a(href="#").add-rep Добавить розыгрыш
+
+					.profile-panell
+						.top-info
+							.id ID 325230972
+							.image-holder
+								img(src="img/icons/user-1.png", alt="")
+							h4 Георгий Победоносец
+						a(href="#").button Добавить розыгрыш
+						ul
+							li
+								a(href="#") Избранное
+							li
+								a(href="#") Участвую
+							li
+								a(href="#") Добавленое
+							li
+								a(href="#") Результаты
+							li
+								a(href="#") Пожаловаться
+
+
+
+
+							
+		include ./partials/footer.jade
+
+		include ./partials/scripts.jade

@@ -335,6 +335,7 @@ body
 
 .content
 	margin-top: 19px
+	min-height: 730px
 	.content-container
 		padding-left: 279px
 		padding-right: 280px
@@ -1072,3 +1073,225 @@ body
 			overflow: hidden
 			margin-top: 17px
 			border: none
+
+.repost-header
+	padding-top: 30px
+	text-align: center
+	padding-bottom: 5px
+	h2
+		font-size: 1.55em
+		text-transform: uppercase
+		color: #c32b47
+	&.ftrs
+		text-align: left
+		h2
+			padding-right: 350px
+		.filters
+			position: absolute
+			top: -5px
+			right: 0
+			padding-top: 0
+			a
+				display: inline-block
+				background: #bebebe
+				padding: 3px 20px
+				font-size: 1.2em
+				text-transform: uppercase
+				color: #fff
+				border-radius: 5px
+				position: relative
+				height: 30px
+				text-align: center
+				line-height: 28px
+				margin-left: 9px
+				&:after
+					content: ''
+					position: absolute
+					top: 3px
+					left: 3px
+					background: #aaaaaa
+					height: 100%
+					width: 100%
+					border-radius: 5px
+					z-index: -1
+				&.active,
+				&:hover
+					background: #f2385a
+					&:after
+						background: #c32b47
+
+.fill-form
+	padding-left: 30px
+	padding-top: 8px
+	.left-form
+		padding-right: 24px
+	.rigth-form
+		padding-left: 19px
+	label
+		text-transform: uppercase
+		font-size: 1.2em
+		color: #929ab2
+	.form-group
+		margin-top: 2px
+		height: 27px
+		border-radius: 5px
+		padding-top: 3px
+		background: white
+		margin-bottom: 33px
+		&:after
+			content: ''
+			position: absolute
+			top: -3px
+			left: -3px
+			background: #c32b47
+			height: 100%
+			width: 100%
+			border-radius: 5px
+			z-index: -1
+		input,select
+			width: 100%
+			outline: none
+			border: none
+			text-transform: uppercase
+			padding-left: 7px
+			font-size: 1.2em
+			color: #929ab2
+			border-radius: 5px
+		&.green
+			input,select
+				color: #66efa4
+			&:after
+				background: #66efa4
+		&.number
+			width: 97px
+			margin-right: 13px
+		&.month
+			width: 158px
+		&.arrow
+			&:before
+				content: ''
+				position: absolute
+				background: url(../img/icons/f-arrow-red.png) 50% 50%
+				height: 7px
+				width: 13px
+				top: 12px
+				right: 3px
+				background-size: cover
+		&.plus
+			background: url(../img/icons/plus-red.png) 3% 42% no-repeat
+			padding-left: 20px !important
+			background-size: 15px
+	.radio
+		margin-left: 36px
+	.table-holder
+		max-width: 100%
+		overflow: initial
+		background: white
+		border-radius: 5px
+		margin-top: 20px
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			top: -3px
+			left: -1px
+			background: #c32b47
+			height: 103%
+			width: 100%
+			border-radius: 5px
+			z-index: -1
+		.form-group
+			margin-bottom: 0
+			padding: 0 10px
+			input,select
+				color: #c32b47
+				font-weight: 600
+			&.arrow
+				&:before
+					top: 9px
+					right: -4px
+		table
+			width: 100%
+			border-collapse: collapse
+			th
+				color: #929ab2
+				text-transform: uppercase
+				font-size: 1.2em
+				font-weight: 100
+				border-left: 2px solid #c32b47
+				padding: 2px 10px
+			td
+				border-left: 2px solid #c32b47
+				border-top: 2px solid #c32b47
+				padding: 2px 10px
+	.description
+		margin-top: 17px
+		.desc-left
+			padding-right: 14px
+		.btn-holder
+			text-align: right
+			margin-top: 10px
+		.add-rep
+			display: inline-block
+			background: #f2385a
+			padding: 3px 6px
+			font-size: 1.2em
+			text-transform: uppercase
+			color: #fff
+			border-radius: 5px
+			position: relative
+			width: 210px
+			height: 30px
+			text-align: center
+			line-height: 28px
+			&:after
+				content: ''
+				position: absolute
+				top: 3px
+				left: 3px
+				background: #c32b47
+				height: 100%
+				width: 100%
+				border-radius: 5px
+				z-index: -1
+	.rep-list
+		table
+			width: 100%
+			border-collapse: collapse
+			text-transform: uppercase
+			th
+				color: #929ab2
+				text-transform: uppercase
+				font-size: 1.2em
+				font-weight: 100
+				padding: 2px 10px
+			td
+				padding: 5px 10px
+			tr
+				&:nth-child(even)
+					background: #d9dce5
+			p
+				color: #f2385a
+		.lob
+			display: inline-block
+			background: #f2385a
+			padding: 3px 20px
+			font-size: 1.2em
+			text-transform: uppercase
+			color: #fff
+			border-radius: 5px
+			position: relative
+			height: 30px
+			text-align: center
+			line-height: 28px
+			margin-left: 9px
+			&:after
+				content: ''
+				position: absolute
+				top: 3px
+				left: 3px
+				background: #c32b47
+				height: 100%
+				width: 100%
+				border-radius: 5px
+				z-index: -1

@@ -1,0 +1,140 @@
+doctype html
+html(lang='ru')
+	head
+		title main
+
+		include ./partials/head.jade
+
+	body
+		include ./partials/noscript.jade
+		include ./partials/top-line.jade
+
+		
+		section.repost-header
+			.container
+				h2 Для добавления розыгрыша заполните анкету
+		section.content
+			.container
+				.content-container
+					.bunners
+						.bunner
+						.bunner
+
+					.fill-form
+						.inline-layout.col-2
+							.left-form
+								label(for="34") Ссылка на розыгрыш
+								.form-group
+									input(type="text")
+								label(for="34") В какой стране проходит розыгрыш
+								.form-group.green
+									select#34(name="343")
+										option(value="1") Украина
+										option(value="1") Россия
+										option(value="1") Беларусь
+								label(for="34") Категория приза
+								.form-group
+									input(type="text")
+							.rigth-form
+								label(for="34") ДАта окончания
+								.inline-layout
+									.form-group.number.arrow
+										select#34(name="343")
+											option(value="0", selected, disabled)
+											option(value="1") 22
+											option(value="1") 23
+											option(value="1") 42
+									.form-group.number.arrow
+										select#34(name="343")
+											option(value="0", selected, disabled)
+											option(value="1") 01
+											option(value="1") 02
+											option(value="1") 05
+									.form-group.month.arrow
+										select#34(name="343")
+											option(value="0", selected, disabled)
+											option(value="1") 2017
+											option(value="1") 2015
+											option(value="1") 2016
+								label(for="34") В каком городе проходит розыгрыш
+								.form-group
+									input(type="text")
+								label(for="34") Для кого подойдет ваш приз
+								.form-group
+									input(type="text")
+								.box-holer
+									.inline-layout
+										.radio
+											input(type="radio", name="pay", value="1", id="radio")
+											label(for="radio") Платно
+										.radio
+											input(type="radio", name="pay", value="1", id="radio1")
+											label(for="radio1") Бесплатно
+						.table-holder
+							table
+								tbody
+									tr
+										th ВИД
+										th Стоимость в день
+										th количество дней
+										th сума к оплате
+									tr
+										td
+											.form-group.arrow.plus
+												select#342(name="343")
+													option(value="0", selected, disabled) Боковой
+													option(value="1") 2dfdf2
+													option(value="1") 2dfdf3
+													option(value="1") 4dfdf2
+										td
+											.form-group
+												input(type="text")
+										td
+											.form-group.arrow
+												select#342(name="343")
+													option(value="0", selected, disabled)
+													option(value="1") 2dfdf2
+													option(value="1") 2dfdf3
+													option(value="1") 4dfdf2
+										td
+											.form-group
+												input(type="text")
+						.description
+							.inline-layout.col-2
+								.desc-left
+									.image-holder
+										img.fake-img(src='img/content/best-1.jpg', alt='img/content/best-1.jpg')
+										.img(style='background-image: url("img/content/best-1.jpg")')
+								.desc-right
+									.text-holder
+										p
+											| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum nesciunt labore voluptate alias officia deleniti, excepturi reprehenderit iusto omnis debitis consequatur unde fugit odit eum ducimus a rem. Similique, velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum nesciunt labore voluptate alias officia deleniti, excepturi reprehenderit iusto omnis debitis consequatur unde fugit odit eum ducimus a rem. Similique, velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum nesciunt labore voluptate alias officia deleniti, excepturi reprehenderit iusto omnis debitis consequatur unde fugit odit eum ducimus a rem. Similique, velit.
+										.btn-holder
+											a(href="#").add-rep Добавить
+
+					.profile-panell
+						.top-info
+							.id ID 325230972
+							.image-holder
+								img(src="img/icons/user-1.png", alt="")
+							h4 Георгий Победоносец
+						a(href="#").button Добавить розыгрыш
+						ul
+							li
+								a(href="#") Избранное
+							li
+								a(href="#") Участвую
+							li
+								a(href="#") Добавленое
+							li
+								a(href="#") Результаты
+							li
+								a(href="#") Пожаловаться
+
+
+
+
+							
+		include ./partials/footer.jade
+
+		include ./partials/scripts.jade
