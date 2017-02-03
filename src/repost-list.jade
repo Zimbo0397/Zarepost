@@ -35,10 +35,10 @@ html(lang='ru')
 									tr
 										th Название
 										th
-											img(src="img/icons/bl-eye.svg", alt="")
+											img.ico-eye(src="img/icons/bl-eye.svg", alt="")
 											|К-во просмотров
 										th
-											img(src="img/icons/person-blue.svg", alt="")
+											img.ico-person(src="img/icons/person-blue.svg", alt="")
 											|к-во участников
 										th продвижение
 									tr
@@ -84,6 +84,35 @@ html(lang='ru')
 											p 328
 										td
 											a(href="#").lob продвинуть
+						.table-holder
+							table
+								tbody
+									tr
+										th ВИД
+										th Стоимость в день
+										th количество дней
+										th сума к оплате
+									tr
+										td
+											.form-group.arrow.plus
+												select#342(name="343")
+													option(value="0", selected, disabled) Боковой
+													option(value="1") 2dfdf2
+													option(value="1") 2dfdf3
+													option(value="1") 4dfdf2
+										td
+											.form-group
+												input(type="text")
+										td
+											.form-group.arrow
+												select#342(name="343")
+													option(value="0", selected, disabled)
+													option(value="1") 2dfdf2
+													option(value="1") 2dfdf3
+													option(value="1") 4dfdf2
+										td
+											.form-group
+												input(type="text")
 						.description
 							.inline-layout.col-2
 								.desc-left
