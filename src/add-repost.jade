@@ -15,7 +15,7 @@ html(lang='ru')
 				h2 Для добавления розыгрыша заполните анкету
 		section.content
 			.container
-				.content-container
+				.content-container.form-container
 					.bunners
 						.bunner
 						.bunner
@@ -70,35 +70,36 @@ html(lang='ru')
 										.radio
 											input(type="radio", name="pay", value="1", id="radio1")
 											label(for="radio1") Бесплатно
-						.table-holder
-							table
-								tbody
-									tr
-										th ВИД
-										th Стоимость в день
-										th количество дней
-										th сума к оплате
-									tr
-										td
-											.form-group.arrow.plus
-												select#342(name="343")
-													option(value="0", selected, disabled) Боковой
-													option(value="1") 2dfdf2
-													option(value="1") 2dfdf3
-													option(value="1") 4dfdf2
-										td
-											.form-group
-												input(type="text")
-										td
-											.form-group.arrow
-												select#342(name="343")
-													option(value="0", selected, disabled)
-													option(value="1") 2dfdf2
-													option(value="1") 2dfdf3
-													option(value="1") 4dfdf2
-										td
-											.form-group
-												input(type="text")
+						.scroll-holder
+							.table-holder
+								table
+									tbody
+										tr
+											th ВИД
+											th Стоимость в день
+											th количество дней
+											th сума к оплате
+										tr
+											td
+												.form-group.arrow.plus
+													select#342(name="343")
+														option(value="0", selected, disabled) Боковой
+														option(value="1") 2dfdf2
+														option(value="1") 2dfdf3
+														option(value="1") 4dfdf2
+											td
+												.form-group
+													input(type="text")
+											td
+												.form-group.arrow
+													select#342(name="343")
+														option(value="0", selected, disabled)
+														option(value="1") 2dfdf2
+														option(value="1") 2dfdf3
+														option(value="1") 4dfdf2
+											td
+												.form-group
+													input(type="text")
 						.description
 							.inline-layout.col-2
 								.desc-left
@@ -113,6 +114,7 @@ html(lang='ru')
 											a(href="#").add-rep Добавить
 
 					.profile-panell
+						a(href="#").close-btn
 						.top-info
 							.id ID 325230972
 							.image-holder

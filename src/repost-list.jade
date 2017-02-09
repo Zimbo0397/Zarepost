@@ -23,96 +23,97 @@ html(lang='ru')
 							a(href="#") Прошедшие
 		section.content
 			.container
-				.content-container
+				.content-container.form-container
 					.bunners
 						.bunner
 						.bunner
 
 					.fill-form
-						.rep-list
-							table
-								tbody
-									tr
-										th Название
-										th
-											img.ico-eye(src="img/icons/bl-eye.svg", alt="")
-											|К-во просмотров
-										th
-											img.ico-person(src="img/icons/person-blue.svg", alt="")
-											|к-во участников
-										th продвижение
-									tr
-										td
-											p
-												|розыгрыш телефона NOKIA Xperia
-										td
-											p 328
-										td
-											p 328
-										td
-											p
-												|VIP
-												br
-												|осталось 3 дня
-									tr
-										td
-											p
-												|розыгрыш телефона NOKIA Xperia
-										td
-											p 328
-										td
-											p 328
-										td
-											a(href="#").lob продвинуть
-									tr
-										td
-											p
-												|розыгрыш телефона NOKIA Xperia
-										td
-											p 328
-										td
-											p 328
-										td
-											a(href="#").lob продвинуть
-									tr
-										td
-											p
-												|розыгрыш телефона NOKIA Xperia
-										td
-											p 328
-										td
-											p 328
-										td
-											a(href="#").lob продвинуть
-						.table-holder
-							table
-								tbody
-									tr
-										th ВИД
-										th Стоимость в день
-										th количество дней
-										th сума к оплате
-									tr
-										td
-											.form-group.arrow.plus
-												select#342(name="343")
-													option(value="0", selected, disabled) Боковой
-													option(value="1") 2dfdf2
-													option(value="1") 2dfdf3
-													option(value="1") 4dfdf2
-										td
-											.form-group
-												input(type="text")
-										td
-											.form-group.arrow
-												select#342(name="343")
-													option(value="0", selected, disabled)
-													option(value="1") 2dfdf2
-													option(value="1") 2dfdf3
-													option(value="1") 4dfdf2
-										td
-											.form-group
-												input(type="text")
+						.scroll-holder
+							.rep-list
+								table
+									tbody
+										tr
+											th Название
+											th
+												img.ico-eye(src="img/icons/bl-eye.svg", alt="")
+												|К-во просмотров
+											th
+												img.ico-person(src="img/icons/person-blue.svg", alt="")
+												|к-во участников
+											th продвижение
+										tr
+											td
+												p
+													|розыгрыш телефона NOKIA Xperia
+											td
+												p 328
+											td
+												p 328
+											td
+												p
+													|VIP
+													br
+													|осталось 3 дня
+										tr
+											td
+												p
+													|розыгрыш телефона NOKIA Xperia
+											td
+												p 328
+											td
+												p 328
+											td
+												a(href="#").lob продвинуть
+										tr
+											td
+												p
+													|розыгрыш телефона NOKIA Xperia
+											td
+												p 328
+											td
+												p 328
+											td
+												a(href="#").lob продвинуть
+										tr
+											td
+												p
+													|розыгрыш телефона NOKIA Xperia
+											td
+												p 328
+											td
+												p 328
+											td
+												a(href="#").lob продвинуть
+								.table-holder
+									table
+										tbody
+											tr
+												th ВИД
+												th Стоимость в день
+												th количество дней
+												th сума к оплате
+											tr
+												td
+													.form-group.arrow.plus
+														select#342(name="343")
+															option(value="0", selected, disabled) Боковой
+															option(value="1") 2dfdf2
+															option(value="1") 2dfdf3
+															option(value="1") 4dfdf2
+												td
+													.form-group
+														input(type="text")
+												td
+													.form-group.arrow
+														select#342(name="343")
+															option(value="0", selected, disabled)
+															option(value="1") 2dfdf2
+															option(value="1") 2dfdf3
+															option(value="1") 4dfdf2
+												td
+													.form-group
+														input(type="text")
 						.description
 							.inline-layout.col-2
 								.desc-left
@@ -127,6 +128,7 @@ html(lang='ru')
 											a(href="#").add-rep Добавить розыгрыш
 
 					.profile-panell
+						a(href="#").close-btn
 						.top-info
 							.id ID 325230972
 							.image-holder
