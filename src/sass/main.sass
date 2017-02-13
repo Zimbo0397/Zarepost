@@ -46,10 +46,11 @@ body
 		left: 14px
 		height: 31px
 		@media #{$media-xg-max}
-			width: 127px
+			width: 180px
 			top: 6px
 		@media #{$media-lg-max}
 			top: 3px
+			width: 130px
 	.navigation
 		padding-left: 83px
 		position: relative
@@ -164,13 +165,16 @@ body
 			position: relative
 			top: 7px
 			right: -33px
+			@media #{$media-xg-max}
+				right: -3px
 			@media #{$media-lg-max}
 				right: 0
 			i
 				margin-right: 6px
 				font-size: 1.1em
 			span
-				display: none
+				@media #{$media-xg-max}
+					display: none
 				@media #{$media-md-max}
 					display: inline-block
 		&.mobile
@@ -218,7 +222,7 @@ body
 		padding-top: 20px
 
 .mid-line
-	background: url('../img/icons/р2.png')
+	background: url('../img/icons/р2.png') 50% 50%
 	color: #fff
 	border-top: 1px solid #7d9dd9
 	.mid-content
@@ -288,10 +292,12 @@ body
 		width: 545px
 		@media #{$media-xg-max}
 			top: 88px
-			width: 275px
+			width: 375px
+		@media #{$media-xg-max}
+			width: 295px
 		@media #{$media-md-max}
 			top: 38px
-			width: 170px
+			width: 240px
 		@media #{$media-sm-max}
 			display: none
 .breadcrumbs
@@ -315,10 +321,12 @@ body
 	@media #{$media-lg-max}
 		text-align: center
 	.filters-holder
+		text-align: center
 		@media #{$media-lg-max}
 			display: inline-block
 	.f-filters
-		padding-left: 284px
+		// padding-left: 284px
+		text-align: center
 		@media #{$media-xg-max}
 			padding-left: 0
 
@@ -493,10 +501,12 @@ body
 	.content-container
 		padding-left: 279px
 		padding-right: 280px
+		position: relative
 		@media #{$media-xg-max}
-			padding-left: 0
+			padding-right: 0px
 		@media #{$media-lg-max}
 			padding-right: 0
+			padding-left: 0
 			max-width: 890px
 			margin: 0 auto
 		@media #{$media-md-max}
@@ -515,13 +525,15 @@ body
 		position: absolute
 		top: 3px
 		left: 4px
-		@media #{$media-xg-max}
+		@media #{$media-lg-max}
 			display: none
 		.bunner
 			height: 330px
 			width: 260px
 			background: #507299
 			margin-bottom: 20px
+			// @media #{$media-xg-max}
+			// 	width: 200px
 	.profile-panell
 		position: absolute
 		width: 260px
@@ -532,12 +544,12 @@ body
 		background: #e9ebf1
 		z-index: 5
 		transition: top .2s
-		@media #{$media-lg-max}
+		@media #{$media-xg-max}
 			left: 50%
 			top: -100%
 			transform: translateX(-50%) translateY(-50%)
 		&.open
-			@media #{$media-lg-max}
+			@media #{$media-xg-max}
 				top: 50%
 				transition: top .2s
 				position: fixed
@@ -548,7 +560,7 @@ body
 			height: 20px
 			width: 20px
 			background: url(../img/icons/close-profile.svg)
-			@media #{$media-lg-min}
+			@media #{$media-xg-min}
 				display: none
 		.top-info
 			padding: 16px 18px
@@ -1610,13 +1622,13 @@ body
 .acc-box
 	position: relative
 	top: 3px
-	right: 0px
+	right: -7px
 	width: 30px
 	height: 30px
 	z-index: 2
 	opacity: 0.7
 	display: inline-block
-	@media #{$media-lg-min}
+	@media #{$media-xg-min}
 		display: none
 	@media #{$media-md-max}
 		display: none
