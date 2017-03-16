@@ -1,0 +1,82 @@
+doctype html
+html(lang='ru')
+	head
+		title no-reposts
+
+		include ./partials/head.jade
+
+	body
+		include ./partials/noscript.jade
+		include ./partials/top-line.jade
+
+		
+		section.repost-header.ftrs
+			.container.container-720
+				h2 избранное
+				.filters
+					ul.inline-layout
+						li
+							a(href="#").active Все
+						li
+							a(href="#") Активные
+						li
+							a(href="#") Прошедшие
+		section.content
+			.container
+				.content-container.form-container
+					.bunners
+						.bunner
+						.bunner
+
+					.fill-form
+						.scroll-holder
+							.rep-list
+								table
+									tbody
+										tr
+											th
+											th 
+												img(src="img/icons/share-w.jpg", alt="")
+											th
+												img(src="img/icons/eye-w.jpg", alt="")
+											th
+												img(src="img/icons/person-g.jpg", alt="")
+											th
+												img(src="img/icons/celendar-g.jpg", alt="")
+											th
+						.no-reposts
+							p
+								|В вашем списке еще нет розыгрышей Перейти 
+								a(href="#") на главную
+									
+
+
+								
+						
+					.profile-panell
+						a(href="#").close-btn
+						.top-info
+							.id ID 325230972
+							.image-holder
+								img(src="img/icons/user-1.png", alt="")
+							h4 Георгий Победоносец
+						a(href="#").button Добавить розыгрыш
+						ul
+							li
+								a(href="#").active Избранное
+							li
+								a(href="#") Участвую
+							li
+								a(href="#") Добавленое
+							li
+								a(href="#") Результаты
+							li
+								a(href="#") Пожаловаться
+
+
+
+
+							
+		include ./partials/footer.jade
+
+		include ./partials/scripts.jade

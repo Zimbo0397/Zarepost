@@ -1,7 +1,7 @@
 doctype html
 html(lang='ru')
 	head
-		title main
+		title archive
 
 		include ./partials/head.jade
 
@@ -36,18 +36,13 @@ html(lang='ru')
 						//- 		img.icon-3(src="img/icons/f-3.png", alt="")
 					.select-holder.inline-layout
 						.select-item
-							select#speed(name="speed")
-								option(value="d", disabled, selected) Сортировать
-								option(value="d") Минимум участников  
-								option(value="d") Максимум участников 
-								option(value="d") Минимум просмотров 
-								option(value="d") Последние добавленные
-							//- select#3(name="")
-							//- 	option(value="d", disabled, selected) Сортировать
-							//- 	option(value="d") Минимум участников  
-							//- 	option(value="d") Максимум участников 
-							//- 	option(value="d") Минимум просмотров 
-							//- 	option(value="d") Последние добавленные
+							select#3(name="")
+								option(value="d", disabled, selected) Страна
+								option(value="d") Украина
+								option(value="d") Грузия
+								option(value="d") Россия
+								option(value="d") Казахстан
+								option(value="d") Белорусия
 						//- .select-item
 						//- 	select.select-1#3(name="")
 						//- 		option(value="d", disabled, selected) Город
@@ -66,7 +61,7 @@ html(lang='ru')
 						.bunner
 						.bunner
 					.repost-cards.inline-layout.col-3
-						.card.vk
+						.card.vk.old
 							.card-container
 								.card-top.inline-layout.col-2
 									ul.inline-layout
@@ -95,7 +90,6 @@ html(lang='ru')
 										span 20.09
 								.card-content
 									.image-holder
-										img(src="img/content/card-1.png", alt="")
 									a(href="#").button Подробнее
 								.card-bott.inline-layout.col-2
 									ul.inline-layout.srs-lf
@@ -110,45 +104,11 @@ html(lang='ru')
 									ul.inline-layout.srs-lg
 										li
 											a(href="#").like
-												img(src="img/icons/star-w.svg", alt="")
-												img.clicked(src="img/icons/star-w-active.svg", alt="")
+												img(src="img/icons/star-w-active.svg", alt="")
 										li
-											.repost
+											a(href="#").repost
 												img(src="img/icons/repsot.png", alt="")
-												.tool-tip
-													.tool-tip-body
-														ul.inline-layout
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-														ul.inline-layout
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-
-						.card.fb
+						.card.fb.old
 							.card-container
 								.card-top.inline-layout
 									ul.inline-layout
@@ -176,7 +136,6 @@ html(lang='ru')
 										span 20.09
 								.card-content
 									.image-holder
-										img(src="img/content/card-1.png", alt="")
 									a(href="#").button Подробнее
 								.card-bott.inline-layout.col-2
 									ul.inline-layout.srs-lf
@@ -191,44 +150,11 @@ html(lang='ru')
 									ul.inline-layout.srs-lg
 										li
 											a(href="#").like
-												img(src="img/icons/star-w.svg", alt="")
-												img.clicked(src="img/icons/star-w-active.svg", alt="")
+												img(src="img/icons/star-w-active.svg", alt="")
 										li
-											.repost
+											a(href="#").repost
 												img(src="img/icons/repsot.png", alt="")
-												.tool-tip
-													.tool-tip-body
-														ul.inline-layout
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-														ul.inline-layout
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-						.card.od
+						.card.od.old
 							.card-container
 								.card-top.inline-layout
 									ul.inline-layout
@@ -256,7 +182,6 @@ html(lang='ru')
 										span 20.09
 								.card-content
 									.image-holder
-										img(src="img/content/card-1.png", alt="")
 									a(href="#").button Подробнее
 								.card-bott.inline-layout.col-2
 									ul.inline-layout.srs-lf
@@ -271,44 +196,11 @@ html(lang='ru')
 									ul.inline-layout.srs-lg
 										li
 											a(href="#").like
-												img(src="img/icons/star-w.svg", alt="")
-												img.clicked(src="img/icons/star-w-active.svg", alt="")
+												img(src="img/icons/star-w-active.svg", alt="")
 										li
-											.repost
+											a(href="#").repost
 												img(src="img/icons/repsot.png", alt="")
-												.tool-tip
-													.tool-tip-body
-														ul.inline-layout
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-														ul.inline-layout
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-						.card.vk
+						.card.vk.old
 							.card-container
 								.card-top.inline-layout.col-2
 									ul.inline-layout
@@ -337,7 +229,6 @@ html(lang='ru')
 										span 20.09
 								.card-content
 									.image-holder
-										img(src="img/content/card-1.png", alt="")
 									a(href="#").button Подробнее
 								.card-bott.inline-layout.col-2
 									ul.inline-layout.srs-lf
@@ -352,44 +243,11 @@ html(lang='ru')
 									ul.inline-layout.srs-lg
 										li
 											a(href="#").like
-												img(src="img/icons/star-w.svg", alt="")
-												img.clicked(src="img/icons/star-w-active.svg", alt="")
+												img(src="img/icons/star-w-active.svg", alt="")
 										li
-											.repost
+											a(href="#").repost
 												img(src="img/icons/repsot.png", alt="")
-												.tool-tip
-													.tool-tip-body
-														ul.inline-layout
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-														ul.inline-layout
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-						.card.fb
+						.card.fb.old
 							.card-container
 								.card-top.inline-layout
 									ul.inline-layout
@@ -417,7 +275,6 @@ html(lang='ru')
 										span 20.09
 								.card-content
 									.image-holder
-										img(src="img/content/card-1.png", alt="")
 									a(href="#").button Подробнее
 								.card-bott.inline-layout.col-2
 									ul.inline-layout.srs-lf
@@ -432,44 +289,11 @@ html(lang='ru')
 									ul.inline-layout.srs-lg
 										li
 											a(href="#").like
-												img(src="img/icons/star-w.svg", alt="")
-												img.clicked(src="img/icons/star-w-active.svg", alt="")
+												img(src="img/icons/star-w-active.svg", alt="")
 										li
-											.repost
+											a(href="#").repost
 												img(src="img/icons/repsot.png", alt="")
-												.tool-tip
-													.tool-tip-body
-														ul.inline-layout
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-														ul.inline-layout
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-						.card.od
+						.card.od.old
 							.card-container
 								.card-top.inline-layout
 									ul.inline-layout
@@ -497,7 +321,6 @@ html(lang='ru')
 										span 20.09
 								.card-content
 									.image-holder
-										img(src="img/content/card-1.png", alt="")
 									a(href="#").button Подробнее
 								.card-bott.inline-layout.col-2
 									ul.inline-layout.srs-lf
@@ -512,43 +335,10 @@ html(lang='ru')
 									ul.inline-layout.srs-lg
 										li
 											a(href="#").like
-												img(src="img/icons/star-w.svg", alt="")
-												img.clicked(src="img/icons/star-w-active.svg", alt="")
+												img(src="img/icons/star-w-active.svg", alt="")
 										li
-											.repost
+											a(href="#").repost
 												img(src="img/icons/repsot.png", alt="")
-												.tool-tip
-													.tool-tip-body
-														ul.inline-layout
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-														ul.inline-layout
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
-															li
-																a(href="#")
 
 
 
@@ -605,8 +395,8 @@ html(lang='ru')
 						.text-height
 							p
 								|Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ipsa ducimus unde obcaecati, repellat impedit, assumenda animi aspernatur dolore iure, voluptatem deleniti quibusdam repellendus provident culpa nemo a nulla ab|At atque cupiditate perferendis, odio, quos dolorum nisi, animi corporis explicabo possimus soluta, velit consequuntur nihil officia id accusamus eum impedit dolorem illum. Deserunt eveniet odio, nostrum perspiciatis minima dolores|Eius in, fugiat maxime saepe ea alias sed. Ea facere quidem at necessitatibus maxime natus. Suscipit dolore ut rerum aperiam, fugiat reiciendis beatae sint delectus corporis, a dicta velit natus|Corporis, deserunt ratione nam sapiente iusto optio similique libero vero aliquid. Aliquid, quaerat minima laudantium in voluptatum. Quaerat iste, laborum. Placeat, iste quas doloremque magnam rerum doloribus labore ratione pariatur|Et fugit laudantium asperiores, dolore vel neque, optio, voluptatibus dolor laborum itaque quo repellendus voluptatem natus quae reprehenderit porro cum consequatur ipsa. Harum dolore, odio inventore nam iste dolores libero|Nemo nostrum tempora quisquam excepturi neque, odit voluptas omnis eius voluptatem officiis saepe hic doloremque at similique laudantium velit optio nihil sunt voluptatibus perferendis odio quia. Odio, corporis voluptates reiciendis|Facere molestias eius quibusdam suscipit sed, labore et deserunt in similique veniam? Nesciunt facere dolorum ut modi esse quisquam quis unde tenetur facilis, nisi nulla voluptatibus laboriosam itaque mollitia iusto|Illum quisquam ratione ut fuga repellat nemo, ipsa animi non, eius dolorem impedit accusantium, unde ducimus. Nostrum eos est ab, odio quas voluptatem expedita assumenda eveniet placeat fuga, in ipsam|Non voluptate, deleniti praesentium! Quis obcaecati, neque blanditiis doloremque nihil sunt amet reprehenderit nesciunt iure. Incidunt cum repellat nostrum blanditiis impedit et qui. Suscipit earum itaque, a quia dicta in|Consectetur molestias dolores facere, nihil voluptates aliquid vitae, cupiditate eius aspernatur a eligendi nesciunt nam amet nostrum illo vel voluptatum. Eius magni, unde quod cum blanditiis, explicabo incidunt eos alias.
-						.btn-holder
-							a(href="#").read-more.text-over-toggle читать еще...
+					.btn-holder
+						a(href="#").read-more читать еще...
 
 		section.drawing.prop-slider
 			.container.container-720

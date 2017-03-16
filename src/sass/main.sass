@@ -16,7 +16,8 @@ body
 	&.b-overflow
 		overflow: hidden
 
-.button1
+.button1,
+.button2
 	display: inline-block
 	background: #f2385a
 	border-radius: 13px
@@ -26,8 +27,24 @@ body
 	color: #fff
 	position: relative
 	top: -1px
+	&:hover
+		background: #bebebe
+		&:after
+			background: #aaaaaa
 	@media #{$media-lg-max}
 		font-size: 1em
+.button2
+	border-radius: 5px
+	&:before
+		content: ''
+		position: absolute
+		top: 2px
+		left: 2px
+		background: #c32b47
+		height: 100%
+		width: 100%
+		border-radius: 8px
+		z-index: -1
 
 //----------------------------------
 // TOP-line
@@ -55,11 +72,12 @@ body
 		padding-left: 83px
 		position: relative
 		top: 2px
-		@media #{$media-md-max}
-			display: none
+		@media #{$media-xg-max}
+			padding-left: 60px
 		@media #{$media-lg-max}
 			padding-left: 43px
 		@media #{$media-md-max}
+			display: none
 			padding-left: 53px
 		li
 			a
@@ -68,6 +86,20 @@ body
 				text-transform: uppercase
 				color: #fff
 				line-height: 1.8em
+				+opacity-hover
+				&.active
+					position: relative
+					&:after
+						content: ''
+						position: absolute
+						bottom: -13px
+						left: 50%
+						transform: translateX(-50%)
+						width: 0
+						height: 0
+						border-style: solid
+						border-width: 0 7.5px 10px 7.5px
+						border-color: transparent transparent #ffffff transparent
 				@media #{$media-lg-max}
 					font-size: 1em
 		&.mobile
@@ -80,6 +112,8 @@ body
 	.add-event
 		padding-left: 64px
 		margin-top: 3px
+		@media #{$media-xg-max}
+			padding-left: 24px
 		@media #{$media-md-max}
 			display: none
 		@media #{$media-lg-max}
@@ -129,6 +163,7 @@ body
 				background: #f2385a
 				color: #fff
 				margin-left: 2px
+				+opacity-hover
 				@media #{$media-lg-max}
 					height: 25px
 					width: 25px
@@ -156,6 +191,7 @@ body
 			@media #{$media-md-min}
 				display: none
 	.bookmarks
+		+opacity-hover()
 		@media #{$media-md-max}
 			display: none
 		a
@@ -174,7 +210,7 @@ body
 				margin-right: 6px
 				font-size: 1.1em
 			span
-				@media #{$media-xg-max}
+				@media #{$media-lg-max}
 					display: none
 				@media #{$media-md-max}
 					display: inline-block
@@ -223,13 +259,16 @@ body
 		padding-top: 20px
 
 .mid-line
-	background: url('../img/icons/р2.png') 50% 50%
+	background: url('../img/icons/p2.png') 50% 50%
 	color: #fff
 	border-top: 1px solid #7d9dd9
+	background-size: cover
 	.mid-content
 		padding-left: 75px
 		padding-top: 48px
 		max-width: 607px
+		@media #{$media-xg-max}
+			padding-left: 0
 		@media #{$media-md-max}
 			max-width: 430px
 			padding-left: 0
@@ -292,18 +331,20 @@ body
 		right: 53px
 		width: 545px
 		@media #{$media-xg-max}
-			top: 88px
-			width: 375px
-		@media #{$media-xg-max}
-			width: 295px
+			top: 18px
+			width: 485px
+		@media #{$media-lg-max}
+			top: 48px
+			width: 380px
 		@media #{$media-md-max}
 			top: 38px
-			width: 240px
+			width: 280px
 		@media #{$media-sm-max}
 			display: none
 .breadcrumbs
 	margin-top: 48px
 	background: url(../img/icons/p3.png)
+	background-size: cover
 	ul
 		padding-left: 74px
 		@media #{$media-md-max}
@@ -359,7 +400,8 @@ body
 					width: 100%
 					border-radius: 5px
 					z-index: -1
-				&:hover
+				&:hover,
+				&.active
 					background: #bebebe
 					&:before
 						background: #aaaaaa
@@ -370,7 +412,7 @@ body
 					left: 4px
 					&.face
 						width: 12px
-						top: 6px
+						top: 3px
 						left: 12px
 					&.icon-2
 						top: 4px
@@ -415,16 +457,17 @@ body
 			color: #fff
 			padding-left: 25px
 			height: 30px
-			width: 93px
 			font-size: 1.3em
 			text-transform: uppercase
 			outline: none
+			width: 250px
+			padding-right: 21px
 			&.select-1
 				padding-left: 10px
 				border-left: 1px solid #fff
 		.select-item
 			position: relative
-			padding-right: 29px
+			// padding-right: 29px
 			&:after
 				content: ''
 				position: absolute
@@ -434,16 +477,17 @@ body
 				top: 12px
 				right: 3px
 				background-size: cover
-			&:first-child
-				&:before
-					content: ''
-					height: 22px
-					width: 15px
-					background: url(../img/icons/map-pin.png) 50% 50%
-					position: absolute
-					top: 4px
-					left: 3px
-					background-size: cover
+				pointer-events: none
+			// &:first-child
+			// 	&:before
+			// 		content: ''
+			// 		height: 22px
+			// 		width: 15px
+			// 		background: url(../img/icons/map-pin.png) 50% 50%
+			// 		position: absolute
+			// 		top: 4px
+			// 		left: 3px
+			// 		background-size: cover
 	.search-holder
 		margin-left: 21px
 		border: 1px solid red
@@ -499,21 +543,28 @@ body
 	margin-top: 19px
 	min-height: 730px
 	overflow: hidden
+	padding-bottom: 80px
+	@media #{$media-lg-max}
+	padding-bottom: 40px
 	.content-container
 		padding-left: 279px
 		padding-right: 280px
 		position: relative
 		@media #{$media-xg-max}
-			padding-right: 0px
+			padding-right: 210px
+			padding-left: 210px
 		@media #{$media-lg-max}
 			padding-right: 0
 			padding-left: 0
 			max-width: 890px
 			margin: 0 auto
+			padding-bottom: 250px
 		@media #{$media-md-max}
 			max-width: 550px
+			padding-bottom: 160px
 		@media #{$media-sm-max}
 			max-width: 290px
+			padding-bottom: 230px
 		&.form-container
 			@media #{$media-lg-max}
 				max-width: 100%
@@ -527,14 +578,37 @@ body
 		top: 3px
 		left: 4px
 		@media #{$media-lg-max}
-			display: none
+			top: auto
+			bottom: 0px
+			left: 0
+			width: 100%
+			height: 250px
+			text-align: center
+		@media #{$media-md-max}
+			height: 150px
+		@media #{$media-sm-max}
+			padding: 5px
+			height: 230px
 		.bunner
 			height: 330px
 			width: 260px
 			background: #507299
 			margin-bottom: 20px
-			// @media #{$media-xg-max}
-			// 	width: 200px
+			@media #{$media-xg-max}
+				width: 190px
+			@media #{$media-lg-max}
+				display: inline-block
+				height: 250px
+				margin: 10px
+			@media #{$media-md-max}
+				width: 150px
+				height: 150px
+			@media #{$media-sm-max}
+				width: 100%
+				margin: 0
+				height: 100px
+				margin-bottom: 10px
+
 	.profile-panell
 		position: absolute
 		width: 260px
@@ -546,6 +620,9 @@ body
 		z-index: 5
 		transition: top .2s
 		@media #{$media-xg-max}
+			width: 200px
+		@media #{$media-lg-max}
+			width: 260px
 			left: 50%
 			top: -100%
 			transform: translateX(-50%) translateY(-50%)
@@ -561,7 +638,7 @@ body
 			height: 20px
 			width: 20px
 			background: url(../img/icons/close-profile.svg)
-			@media #{$media-xg-min}
+			@media #{$media-lg-min}
 				display: none
 		.top-info
 			padding: 16px 18px
@@ -592,6 +669,12 @@ body
 			width: 210px
 			margin: 0 auto
 			margin-top: 20px
+			+opacity-hover
+			@media #{$media-xg-max}
+				padding: 2px 8px
+				font-size: 1em
+				width: 167px
+
 		.bott-image
 			text-align: center
 			margin-top: 60px
@@ -602,12 +685,24 @@ body
 			padding-top: 10px
 			padding-bottom: 8px
 			position: relative
+			@media #{$media-xg-max}
+				padding-left: 30px
 			a
 				font-size: 1.2em
 				text-transform: uppercase
 				color: #929ab2
 				position: relative
 				display: block
+				&.active
+					&:before
+						content: ''
+						position: absolute
+						top: 9px
+						left: -20px
+						height: 10px
+						width: 10px
+						background: #59e181
+						border-radius: 50%
 				&:after
 					content: ''
 					position: absolute
@@ -639,6 +734,11 @@ body
 			padding-bottom: 10px
 			height: 335px
 			margin-bottom: 15px
+			&:nth-child(-n+3)
+				.card-container
+						-webkit-box-shadow: 0px 0px 5px 0px rgba(255,0,0,1)
+						-moz-box-shadow: 0px 0px 5px 0px rgba(255,0,0,1)
+						box-shadow: 0px 0px 5px 0px rgba(255,0,0,1)
 			&.vk
 				.card-container
 					background: #507299
@@ -654,12 +754,22 @@ body
 					border-color: #fff
 				.card-container
 					background: #ff9811
+			&.old
+				.card-container
+					background: #bebebe
+					box-shadow: none
+				.card-top,
+				.card-bott
+					border-color: #fff
 			.card-top
 				height: 40px
 				padding: 8px 8px 0 8px
 				border-bottom: 1px solid #43648c
 				ul
 					width: 65%
+					@media #{$media-xg-max}
+						width: 75%
+						vertical-align: middle
 				a
 					display: inline-block
 					height: 22px
@@ -685,6 +795,9 @@ body
 				.counter
 					text-align: right
 					width: 35%
+					@media #{$media-xg-max}
+						width: 25%
+						vertical-align: middle
 					span
 						font-size: 2.2em
 						font-weight: 700
@@ -694,6 +807,11 @@ body
 						overflow: hidden
 						line-height: 0.8em
 						height: 27px
+						@media #{$media-xg-max}
+							height: 22px
+							width: 57px
+							vertical-align: middle
+							font-size: 1.6em
 
 			.card-content
 				height: 253px
@@ -705,7 +823,7 @@ body
 					-webkit-transform: translateX(-50%)
 					-ms-transform: translateX(-50%)
 					transform: translateX(-50%)
-					background: #f2385a
+					background: #c32b47
 					color: #fff
 					border-radius: 5px
 					padding: 4px 21px
@@ -713,6 +831,22 @@ body
 					z-index: 2
 					display: inline-block
 					font-size: 1.2em
+					&:hover
+						background: #aaaaaa
+						transition: background .2s
+						&:before
+							background: #bebebe
+							transition: background .2s 
+					&:before
+						content: ''
+						position: absolute
+						bottom: 2px
+						background: #f2385a
+						left: -2px
+						height: 100%
+						width: 100%
+						border-radius: 5px
+						z-index: -1
 			.card-bott
 				height: 37px
 				padding: 8px
@@ -727,6 +861,8 @@ body
 						margin-left: 2px
 				.reposts
 					margin-left: 18px
+					@media #{$media-xg-max}
+						margin-left: 9px
 					img
 						width: 15px
 						height: 21px
@@ -738,6 +874,8 @@ body
 					vertical-align: middle
 					font-weight: 600
 					margin-left: 4px
+					overflow: hidden
+					max-width: 40px
 				img
 					width: 21px
 					height: 15px
@@ -745,20 +883,86 @@ body
 					display: inline-block
 					vertical-align: middle
 				.like
+					display: inline-block
+					width: 25px
+					height: 25px
+					position: relative
+					&.active
+						img
+							&.clicked
+								opacity: 1
+								transition: opacity .2s
 					img
 						margin-right: 5px
 						width: 25px
 						height: 23px
+						position: absolute
+						top: 0
+						left: 0
+						&.clicked
+							opacity: 0
+							transition: opacity .2s
+
 				.repost
+					position: relative
+					cursor: pointer
 					img
 						height: 19px
 						width: 23px
+					&:hover
+						.tool-tip
+							opacity: 1
+							pointer-events: initial
+							top: 6px
+							transition: opacity .2s, top .2s
+					.tool-tip
+						position: absolute
+						top: 49px
+						right: 0
+						z-index: 2
+						opacity: 0
+						pointer-events: none
+						transition: opacity .2s, top .2s
+						padding-top: 37px
+						.tool-tip-body
+							background: #f2385a
+							padding: 2px
+							border-radius: 4px
+							position: relative
+							&:before
+								content: ''
+								position: absolute
+								top: -10px
+								right: 10px
+								width: 0
+								height: 0
+								border-style: solid
+								border-width: 0 9.5px 10px 9.5px
+								border-color: transparent transparent #f2385a transparent
+						ul
+							white-space: nowrap
+						li
+							line-height: 0
+						a
+							width: 30px
+							height: 30px
+							background: #fff
+							border-radius: 4px
+							display: inline-block
+							margin: 2px
+							text-align: center
+							padding: 3px
+							img
+								width: 100%
+								line-height: 0
+								display: inline-block
+								margin: 0
 				ul
 					&:last-child
 						text-align: right
 .pagination
 	padding-top: 13px
-	padding-bottom: 28px
+	padding-bottom: 48px
 .pagination-list
 	text-align: center
 	li
@@ -775,6 +979,7 @@ body
 			position: relative
 			background-size: cover
 			vertical-align: middle
+			+opacity-hover
 			@media #{$media-xs-max}
 				height: 25px
 				width: 25px
@@ -843,6 +1048,9 @@ body
 			line-height: 1.35em
 			overflow: hidden
 			height: 78px
+			&.active
+				height: auto
+				overflow: initial
 	.btn-holder
 		text-align: right
 		display: block
@@ -859,6 +1067,7 @@ body
 			padding-left: 6px
 			font-weight: 500
 			text-align: left
+			+opacity-hover
 .prop-slider
 	text-align: center
 	background: #ffffff
@@ -879,10 +1088,14 @@ body
 			background: url(../img/icons/slider-right.png) no-repeat 50% 50%
 			background-size: cover
 			right: -15px
+			margin-top: -60px
+			+opacity-hover
 		.bx-prev
 			background: url(../img/icons/slider-left.png) no-repeat 50% 50%
 			background-size: cover
 			left: -15px
+			margin-top: -60px
+			+opacity-hover
 		p
 			color: #ff2151
 			height: 66px
@@ -971,6 +1184,14 @@ body
 		.bttn
 			display: inline-block
 			position: relative
+			&:hover
+				.send
+					background: #aaaaaa
+					transition: background .2s
+			&:hover
+				&:before
+					background: #bebebe
+					transition: background .2s
 			&:before
 				content: ''
 				position: absolute
@@ -1206,6 +1427,14 @@ body
 				right: -1px
 		.comments-container
 			padding-top: 14px
+			max-height: 400px
+			overflow: auto
+			margin-top: 20px
+			&::-webkit-scrollbar
+				width: 0.5em
+			&::-webkit-scrollbar-thumb
+				background-color: #f2385a
+				outline: 1px solid slategrey
 			.comment
 				margin-bottom: 20px
 				h6
@@ -1317,11 +1546,23 @@ body
 				z-index: -1
 		ul
 			margin-top: 16px
+			li
+				vertical-align: middle
 			a
 				display: inline-block
 				height: 20px
 				width: 20px
 				margin: 0 10px
+				&.star
+					height: 30px
+					width: 30px
+				&.active
+					img
+						display: none
+						&.star-a
+							display: inline-block
+				.star-a
+					display: none
 	.recomendations
 		padding-top: 10px
 		@media #{$media-md-max}
@@ -1354,7 +1595,7 @@ body
 	h2
 		font-size: 1.55em
 		text-transform: uppercase
-		color: #c32b47
+		color: #f2385a
 		line-height: 1.4em
 	&.ftrs
 		text-align: left
@@ -1406,6 +1647,8 @@ body
 .fill-form
 	padding-left: 30px
 	padding-top: 8px
+	@media #{$media-xg-max}
+		padding-left: 0
 	@media #{$media-lg-max}
 		padding-left: 0
 		max-width: 674px
@@ -1414,7 +1657,7 @@ body
 		@media #{$media-sm-max}
 			width: 100%
 	.left-form
-		padding-right: 24px
+		padding-right: 14px
 		@media #{$media-sm-max}
 			padding: 0
 	.rigth-form
@@ -1429,7 +1672,6 @@ body
 		margin-top: 2px
 		height: 27px
 		border-radius: 5px
-		padding-top: 3px
 		background: white
 		margin-bottom: 33px
 		&:after
@@ -1451,6 +1693,7 @@ body
 			font-size: 1.2em
 			color: #929ab2
 			border-radius: 5px
+			background: transparent
 		&.green
 			input,select
 				color: #66efa4
@@ -1462,7 +1705,9 @@ body
 			@media #{$media-sm-max}
 				width: 67px
 		&.month
-			width: 158px
+			width: 156px
+			@media #{$media-xg-max}
+				width: 135px
 			@media #{$media-lg-max}
 				width: 97px
 		&.arrow
@@ -1475,6 +1720,7 @@ body
 				top: 12px
 				right: 3px
 				background-size: cover
+				pointer-events: none
 		&.plus
 			background: url(../img/icons/plus-red.png) 3% 42% no-repeat
 			padding-left: 20px !important
@@ -1560,6 +1806,10 @@ body
 			height: 30px
 			text-align: center
 			line-height: 28px
+			&:hover
+				background: #bebebe
+				&:after
+					background: #aaaaaa
 			&:after
 				content: ''
 				position: absolute
@@ -1570,36 +1820,75 @@ body
 				width: 100%
 				border-radius: 5px
 				z-index: -1
+	.no-reposts
+		margin-top: 40px
+		p
+			color: #f2385a
+			font-weight: 600
+			text-transform: uppercase
+			text-align: center
+		a
+			text-decoration: underline
+			color: inherit
+			font-weight: inherit
+			max-width: 317px
 	.rep-list
-		min-width: 780px
+		min-width: 750px
 		table
 			width: 100%
 			border-collapse: collapse
 			text-transform: uppercase
 			text-align: center
+			.view-btns
+				white-space: nowrap
+			.blue
+				color: #3c4a73
+			.plus
+				display: inline-block
+				height: 25px
+				width: 25px
+				vertical-align: middle
+			.line-through	
+				text-decoration: line-through
 			.lob
 				display: inline-block
-				background: #f2385a
 				padding: 3px 20px
 				font-size: 1.2em
 				text-transform: uppercase
 				color: #fff
 				border-radius: 5px
 				position: relative
+				background: #c32b47
 				height: 30px
 				text-align: center
 				line-height: 28px
 				margin-left: 9px
-				&:before
+				vertical-align: middle
+				z-index: 1
+				transition: background .2s
+				&:hover
+					background: #bebebe
+					transition: background .2s
+					&:after
+						background: #aaaaaa
+						transition: background .2s
+				&:after
 					content: ''
 					position: absolute
-					top: 3px
-					left: 3px
-					background: #c32b47
+					top: -1px
+					right: 3px
+					background: #f2385a
 					height: 100%
 					width: 100%
 					border-radius: 5px
 					z-index: -1
+			.clear
+				display: inline-block
+				background: url('../img/icons/close-modal.svg') 50% 50% no-repeat
+				height: 25px
+				width: 25px
+				margin-left: 10px
+				vertical-align: middle
 			th
 				color: #929ab2
 				text-transform: uppercase
@@ -1635,7 +1924,7 @@ body
 	z-index: 2
 	opacity: 0.7
 	display: inline-block
-	@media #{$media-xg-min}
+	@media #{$media-lg-min}
 		display: none
 	@media #{$media-md-max}
 		display: none
@@ -1649,3 +1938,125 @@ body
 		@media #{$media-md-max}
 			right: 0 !important
 			display: inline-block
+
+
+.modal-body
+	max-width: 460px
+	border: 1px solid #c1baba
+	padding: 40px 38px
+	position: relative
+	background: #e9ebf1
+	.close-btn
+		display: inline-block
+		position: absolute
+		top: 10px
+		right: 10px
+		width: 25px
+		height: 25px
+		background: url(../img/icons/close-modal.svg) 50% 50% no-repeat
+	.checkbox
+		display: inline-block
+	.thnks
+		padding-top: 20px
+		a
+			margin-left: 5px
+			font-weight: inherit
+			color: #f2385a
+			text-decoration: underline
+	span
+		color: #3c4a73
+		font-weight: 600
+	.fill-form
+		padding: 0
+		.form-group
+			padding-left: 29px
+			margin-bottom: 23px
+			.icon
+				display: inline-block
+				position: absolute
+				top: 2px
+				left: 8px
+	h3
+		text-align: center
+		text-transform: uppercase
+		line-height: 1.4em
+		font-size: 1.6em
+		color: #3c4a73
+		margin-bottom: 27px
+	.btn-holder
+		text-align: center
+		margin-top: 26px
+		button
+			margin-bottom: 16px
+	.login-btn
+		min-width: 200px
+	.social-login
+		margin-bottom: 20px
+		.number
+			padding-left: 0
+		p
+			font-weight: 600
+			text-align: center
+			font-size: 1.2em
+		.btn-holder
+			margin-top: 10px
+		.button2
+			height: 30px
+			width: 30px
+			padding: 3px
+			vertical-align: middle
+			margin: 5px
+			&.ch-button	
+				height: auto
+				width: auto
+				padding: 3px 20px
+			img
+				width: 24px
+				&.facebook
+					width: 15px
+	.plans
+		text-align: center
+		a
+			color: #3c4a73
+			font-weight: 600
+	.area-holder
+		padding-left: 0
+
+
+
+// JUI-custom
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus,
+.ui-widget-content,
+.ui-selectmenu-button
+	background: #f2385a
+	color: #fff
+	outline: none
+	border: none
+	text-transform: uppercase
+	font: 18px/1.4em 'RobotoCondensed', sans-serif
+.ui-selectmenu-icon
+	display: none
+.ui-selectmenu-button,
+.ui-selectmenu-button:focus,
+.ui-selectmenu-button:hover
+	background: transparent
+
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover
+	background: #bebebe
+	border-color: #bebebe
+
+.ui-selectmenu-button.ui-button
+	padding: 4px

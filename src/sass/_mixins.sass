@@ -8,6 +8,15 @@ $error-color: #ff5656
 $base-font-color: #3c4a73
 
 
+//Hover-mixins
+@mixin opacity-hover()
+	opacity: 1
+	transition: opacity .2s
+	&:hover
+		opacity: 0.8
+		transition: opacity .2s
+
+
 //== Media queries breakpoints
 
 // Extra small screen / phone

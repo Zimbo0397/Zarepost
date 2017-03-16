@@ -1,0 +1,197 @@
+doctype html
+html(lang='ru')
+	head
+		title modals
+
+		include ./partials/head.jade
+
+	body
+		include ./partials/noscript.jade
+
+		.modal-body
+			a(href="#").close-btn
+			h3 регистрация
+			form(action="#")
+				.fill-form
+					ul
+						li
+							.form-group
+								.icon.person
+									img(src="img/icons/person-2.svg", alt="")
+								input(type="text", placeholder="Ваше имя")
+						li
+							.form-group
+								.icon
+									img(src="img/icons/mail-2.svg", alt="")
+								input(type="text", placeholder="Ваш e-mail")
+						li
+							.form-group
+								.icon
+									img(src="img/icons/z-red.svg", alt="")
+								input(type="text", placeholder="пароль")
+						li
+							.form-group
+								.icon
+									img(src="img/icons/z-red.svg", alt="")
+								input(type="text", placeholder="повторите пароль")
+
+					.btn-holder
+						button.button2 зарегестрироваться
+						button.button2 авторизироваться
+					.plans
+						.checkbox
+							input#checkbox1(type="checkbox")
+							label(for="checkbox1")
+						span Я планирую добавлять собственные розыгрыши
+		section(style="margin: 100px")
+		.modal-body
+			a(href="#").close-btn
+			h3 Вход
+			.social-login
+				p Войти при помощи социальных сетей
+				.btn-holder
+					a(href="#").button2
+						img(src="img/icons/f-vk.png", alt="")
+					a(href="#").button2
+						img.facebook(src="img/icons/f-facebook.png", alt="")
+				p или
+			form(action="#")
+				.fill-form
+					ul
+						li
+							.form-group
+								.icon
+									img(src="img/icons/mail-2.svg", alt="")
+								input(type="text", placeholder="Ваш e-mail")
+						li
+							.form-group
+								.icon
+									img(src="img/icons/z-red.svg", alt="")
+								input(type="text", placeholder="пароль")
+
+					.btn-holder
+						button.button2.login-btn войти
+					.plans
+						span
+							a(href="#") Забыли пароль?
+							span |
+							a(href="#") Регистрация 
+		section(style="margin: 100px")
+		.modal-body
+			a(href="#").close-btn
+			h3 пожаловаться
+			form(action="#")
+				.fill-form.mail
+					ul
+						li
+							.form-group
+								.icon.person
+									img(src="img/icons/person-2.svg", alt="")
+								input(type="text", placeholder="Ваше имя")
+						li
+							.form-group
+								.icon
+									img(src="img/icons/phone-2.svg", alt="")
+								input(type="text", placeholder="Номер телефона")
+						li
+							.form-group
+								.icon
+									img(src="img/icons/mail-2.svg", alt="")
+								input(type="text", placeholder="Ваш e-mail")
+						li
+							.area-holder
+								.form-group
+									textarea#de(name="er", placeholder="Введите сообщение")
+
+					.btn-holder
+						button.button2 Отправить
+		section(style="margin: 100px")
+		.modal-body
+			a(href="#").close-btn
+			h3 добавить розыгрыш
+			form(action="#")
+				.fill-form.mail
+					ul
+						li
+							.form-group
+								.icon.person
+									img(src="img/icons/person-2.svg", alt="")
+								input(type="text", placeholder="Ваше имя")
+						li
+							.form-group
+								.icon
+									img(src="img/icons/phone-2.svg", alt="")
+								input(type="text", placeholder="Номер телефона")
+						li
+							.form-group
+								.icon
+									img(src="img/icons/calendar-red-add.svg", alt="")
+								input(type="text", placeholder="дата розыгрыша")
+						li
+							.form-group
+								.icon
+									img(src="img/icons/mail-2.svg", alt="")
+								input(type="text", placeholder="Ваш e-mail")
+						li
+							.area-holder
+								.form-group
+									textarea#de(name="er", placeholder="Введите сообщение")
+
+					.btn-holder
+						button.button2 Отправить
+		section(style="margin: 100px")
+		.modal-body
+			a(href="#").close-btn
+			.social-login
+				.thnks
+					p Вы точно хотите удалить розыгрыш?
+				
+			form(action="#")
+				.fill-form
+					.btn-holder
+						button.button2.login-btn удалить
+		section(style="margin: 100px")
+		.modal-body
+			a(href="#").close-btn
+			.social-login
+				.thnks
+					p Спасибо, ваш розыгрыш почти добавлен. Письмо для его активации у вас на почте.
+		section(style="margin: 100px")
+		.modal-body
+			a(href="#").close-btn
+			.social-login
+				.thnks
+					p
+						|Спасибо за регистрацию!
+						br 
+						|Теперь вы можете принимать участие в розыгрышах или
+						a(href="#") добавить свой
+		section(style="margin: 100px")
+		.modal-body
+			a(href="#").close-btn
+			.social-login
+				.thnks
+					p К сожалению мы не смогли определить дату окончания розыгрыша. Вы можете добавить ее самостоятельно
+				.fill-form
+					.inline-layout
+						.form-group.number.arrow
+							select#e(name="w")
+								option(value="0", selected)
+								option(value="1") op
+								option(value="1") op
+								option(value="1") op
+						.form-group.number.arrow
+							select#e(name="w")
+								option(value="0", selected)
+								option(value="1") op
+								option(value="1") op
+								option(value="1") op
+						.form-group.number.arrow
+							select#e(name="w")
+								option(value="0", selected)
+								option(value="1") op
+								option(value="1") op
+								option(value="1") op
+
+				
+		include ./partials/scripts.jade

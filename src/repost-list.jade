@@ -1,7 +1,7 @@
 doctype html
 html(lang='ru')
 	head
-		title main
+		title repost-list
 
 		include ./partials/head.jade
 
@@ -85,35 +85,35 @@ html(lang='ru')
 												p 328
 											td
 												a(href="#").lob продвинуть
-								.table-holder
-									table
-										tbody
-											tr
-												th ВИД
-												th Стоимость в день
-												th количество дней
-												th сума к оплате
-											tr
-												td
-													.form-group.arrow.plus
-														select#342(name="343")
-															option(value="0", selected, disabled) Боковой
-															option(value="1") 2dfdf2
-															option(value="1") 2dfdf3
-															option(value="1") 4dfdf2
-												td
-													.form-group
-														input(type="text")
-												td
-													.form-group.arrow
-														select#342(name="343")
-															option(value="0", selected, disabled)
-															option(value="1") 2dfdf2
-															option(value="1") 2dfdf3
-															option(value="1") 4dfdf2
-												td
-													.form-group
-														input(type="text")
+								//- .table-holder
+								//- 	table
+								//- 		tbody
+								//- 			tr
+								//- 				th ВИД
+								//- 				th Стоимость в день
+								//- 				th количество дней
+								//- 				th сума к оплате
+								//- 			tr
+								//- 				td
+								//- 					.form-group.arrow.plus
+								//- 						select#342(name="343")
+								//- 							option(value="0", selected, disabled) Боковой
+								//- 							option(value="1") 2dfdf2
+								//- 							option(value="1") 2dfdf3
+								//- 							option(value="1") 4dfdf2
+								//- 				td
+								//- 					.form-group
+								//- 						input(type="text")
+								//- 				td
+								//- 					.form-group.arrow
+								//- 						select#342(name="343")
+								//- 							option(value="0", selected, disabled)
+								//- 							option(value="1") 2dfdf2
+								//- 							option(value="1") 2dfdf3
+								//- 							option(value="1") 4dfdf2
+								//- 				td
+								//- 					.form-group
+								//- 						input(type="text")
 						.description
 							.inline-layout.col-2
 								.desc-left
@@ -139,7 +139,7 @@ html(lang='ru')
 						a(href="#").button Добавить розыгрыш
 						ul
 							li
-								a(href="#") Избранное
+								a(href="#").active Избранное
 							li
 								a(href="#") Участвую
 							li
